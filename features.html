@@ -1,1 +1,150 @@
-<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Capstone - prominent features</title><link rel="stylesheet" href="css/style.css" type="text/css" media="all"><link rel="stylesheet" href="css/pygments.css" type="text/css" media="all"><link rel="alternate" href="feed/index.xml" type="application/atom+xml" title="Atom Feed"></head><body><div id="fb-root"></div> <script>!function(e,t,n){var c,o=e.getElementsByTagName(t)[0];e.getElementById(n)||(c=e.createElement(t),c.id=n,c.src="//connect.facebook.net/en_US/all.js#xfbml=1",o.parentNode.insertBefore(c,o))}(document,"script","facebook-jssdk")</script><script>!function(t,e,r){var n,s=t.getElementsByTagName(e)[0],i=/^http:/.test(t.location)?"http":"https";t.getElementById(r)||(n=t.createElement(e),n.id=r,n.src=i+"://platform.twitter.com/widgets.js",s.parentNode.insertBefore(n,s))}(document,"script","twitter-wjs")</script><script>!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://apis.google.com/js/plusone.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="page"> <header> <a href="index.html" id="cs_home">Capstone</a> <nav> <a href="index.html">Home</a> <a href="download.html">Download</a> <a href="documentation.html">Docs</a> <a href="showcase.html">Showcase</a> <a href="testimonial.html">Testimonials</a> <a href="donate.html">Donate</a> <a href="contact.html">Contact</a> </nav> </header> <section><p>Capstone offers some unparalleled features in comparison with alternative disassembly frameworks.</p><h4 id="multiple-architectures">Multiple architectures</h4><p>Capstone is one of a very few disassembly frameworks that can support multi-architectures. So far, it can handle 9 architectures: ARM, ARM64 (aka ARMv8/AArch64), M68K, Mips, PowerPC, Sparc, SystemZ, XCore, X86 (including X86_64). More will be added in the future when possible.</p><h4 id="updated">Updated</h4><p>As far as we are aware, in all 9 architectures, Capstone can handle more instructions than other frameworks. Especially, it even supports most modern CPU extensions &amp; is guaranteed to remain updated in the future.</p><h4 id="clean-simple--intuitive-architecture-neutral-api">Clean, simple &amp; intuitive architecture-neutral API</h4><p>Clean &amp; intuitive is the key principle in designing the API for Capstone. The interface has always been as simple as possible. It would take a new user just few minutes to understand &amp; start writing his own tools based on available samples accompanying Capstone source code.</p><p>Even better, the API is independent of the hardwares, so your analysis tools can work in the same way across all the architectures.</p><h4 id="detailed-instruction-information">Detailed instruction information</h4><p>Capstone breaks down instruction information, making it straightforward to access to instruction operands &amp; other internal instruction data.</p><p>This feature is called <em>decomposer</em> by some alternatives, but Capstone is the only framework having this across all the architectures, in seamless way.</p><h4 id="instruction-semantics">Instruction semantics</h4><p>Capstone provides some important semantics of the disassembled instruction, such as list of implicit registers read &amp; written, or if this instruction belongs to a group of instructions (such as <em>ARM Neon</em> group, or <em>Intel SSE4.2</em> group). Now writing your own machine code normalization becomes easier than ever.</p><h4 id="zero-barrier">Zero barrier</h4><p>Implemented in pure C language, Capstone is easy to be adopted for your low-level tools. Furthermore, lightweight &amp; efficient bindings for popular languages such as <em>Python</em>, <em>Ruby</em>, <em>NodeJS</em>, <em>C#</em>, <em>Java</em>, <em>Go</em>, <em>Ocaml</em>, <em>Perl</em>, <em>Pascal</em>, <em>Delphi</em>, <em>Lua</em>, <em>Rust</em> &amp; <em>Vala</em> are also available.</p><p>Note that all of our the bindings are all manually coded, since we do not want to rely on bloated SWIG for wrapping.</p><h4 id="multiple-platforms">Multiple platforms</h4><p>With native support for <em>Windows</em> &amp; *nix (confirmed to work on <em>OSX</em>, <em>iOS</em>, <em>Android</em>, <em>Linux</em>, *BSD &amp; <em>Solaris</em>), Capstone is available for your tools regardless of the platform.</p><h4 id="thread-safe">Thread-safe</h4><p>Thread-safe is the first priority when designing &amp; implementing Capstone. Thanks to this feature, your tools can disassemble binary code in multiple threads without any issue.</p><h4 id="embedding-into-firmwareos-kernel">Embedding into firmware/OS kernel</h4><p>Capstone is designed to be able to easily embed into firmware &amp; OS kernel. The framework can be built to be minimized, and with some special APIs provided by Capstone, the engine can ben programmed to use in those special environments. Details are available <a href="embed.html">here</a>.</p><h4 id="beyond-llvm">Beyond LLVM</h4><p>Capstone is based on the almighty LLVM compiler framework, but it is not just LLVM: our engine it has <a href="beyond_llvm.html">a lot more to offer</a>.</p><h4 id="liberal-license">Liberal license</h4><p>Capstone has been released under the BSD open source license. Thus there is no obligation, except products using Capstone need to redistribute file LICENSE.TXT found the source of Capstone in the same packages.</p><p>However, we would be glad to hear from you, so we can link to your products in our <a href="showcase.html">showcases</a>.</p></section> <footer> </footer></div></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prominent features – Capstone – The Ultimate Disassembler</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="The Ultimate Disassembler">
+    <meta property="og:description" content="The Ultimate Disassembler" />
+    
+    <meta name="author" content="Capstone" />
+
+    
+    <meta property="og:title" content="prominent features" />
+    <meta property="twitter:title" content="prominent features" />
+    
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/256x256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/512x512.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Capstone - The Ultimate Disassembler" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/img/capstone.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Capstone</a></h1>
+            <p class="site-description">The Ultimate Disassembler</p>
+          </div>
+
+          <nav>
+            <a href="/download.html">Download</a>
+            <a href="/documentation.html">Docs</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/testimonial.html">Testimonials</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/contact.html">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <p>Capstone offers some unparalleled features in comparison with alternative disassembly frameworks.</p>
+
+<h4>Multiple architectures</h4>
+
+<p>Capstone is one of a very few disassembly frameworks that can support multi-architectures. So far, it can handle 9 architectures: ARM, ARM64 (aka ARMv8/AArch64), M68K, Mips, PowerPC, Sparc, SystemZ, XCore, X86 (including X86_64). More will be added in the future when possible.</p>
+
+<h4>Updated</h4>
+
+<p>As far as we are aware, in all 9 architectures, Capstone can handle more instructions than other frameworks. Especially, it even supports most modern CPU extensions &amp; is guaranteed to remain updated in the future.</p>
+
+<h4>Clean, simple &amp; intuitive architecture-neutral API</h4>
+
+<p>Clean &amp; intuitive is the key principle in designing the API for Capstone. The interface has always been as simple as possible. It would take a new user just few minutes to understand &amp; start writing his own tools based on available samples accompanying Capstone source code.</p>
+
+<p>Even better, the API is independent of the hardwares, so your analysis tools can work in the same way across all the architectures.</p>
+
+<h4>Detailed instruction information</h4>
+
+<p>Capstone breaks down instruction information, making it straightforward to access to instruction operands &amp; other internal instruction data.</p>
+
+<p>This feature is called <em>decomposer</em> by some alternatives, but Capstone is the only framework having this across all the architectures, in seamless way.</p>
+
+<h4>Instruction semantics</h4>
+
+<p>Capstone provides some important semantics of the disassembled instruction, such as list of implicit registers read &amp; written, or if this instruction belongs to a group of instructions (such as <em>ARM Neon</em> group, or <em>Intel SSE4.2</em> group). Now writing your own machine code normalization becomes easier than ever.</p>
+
+<h4>Zero barrier</h4>
+
+<p>Implemented in pure C language, Capstone is easy to be adopted for your low-level tools. Furthermore, lightweight &amp; efficient bindings for popular languages such as <em>Python</em>, <em>Ruby</em>, <em>NodeJS</em>, <em>C#</em>, <em>Java</em>, <em>Go</em>, <em>Ocaml</em>, <em>Perl</em>, <em>Pascal</em>, <em>Delphi</em>, <em>Lua</em>, <em>Rust</em> &amp; <em>Vala</em> are also available.</p>
+
+<p>Note that all of our the bindings are all manually coded, since we do not want to rely on bloated SWIG for wrapping.</p>
+
+<h4>Multiple platforms</h4>
+
+<p>With native support for <em>Windows</em> &amp; *nix (confirmed to work on <em>OSX</em>, <em>iOS</em>, <em>Android</em>, <em>Linux</em>, *BSD &amp; <em>Solaris</em>), Capstone is available for your tools regardless of the platform.</p>
+
+<h4>Thread-safe</h4>
+
+<p>Thread-safe is the first priority when designing &amp; implementing Capstone. Thanks to this feature, your tools can disassemble binary code in multiple threads without any issue.</p>
+
+<h4>Embedding into firmware/OS kernel</h4>
+
+<p>Capstone is designed to be able to easily embed into firmware &amp; OS kernel. The framework can be built to be minimized, and with some special APIs provided by Capstone, the engine can ben programmed to use in those special environments. Details are available <a href="embed.html">here</a>.</p>
+
+<h4>Beyond LLVM</h4>
+
+<p>Capstone is based on the almighty LLVM compiler framework, but it is not just LLVM: our engine it has <a href="beyond_llvm.html">a lot more to offer</a>.</p>
+
+<h4>Liberal license</h4>
+
+<p>Capstone has been released under the BSD open source license. Thus there is no obligation, except products using Capstone need to redistribute file LICENSE.TXT found the source of Capstone in the same packages.</p>
+
+<p>However, we would be glad to hear from you, so we can link to your products in our <a href="showcase.html">showcases</a>.</p>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:capstone.engine@gmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/aquynh/capstone"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/capstone_engine"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

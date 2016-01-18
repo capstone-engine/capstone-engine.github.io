@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3.0.3 – Capstone – The Ultimate Disassembler</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Release 3.0.3 is a stable version with important fixes in the core &amp; Python bindings.
+" />
+    <meta property="og:description" content="Release 3.0.3 is a stable version with important fixes in the core &amp; Python bindings.
+" />
+    
+    <meta name="author" content="Capstone" />
+
+    
+    <meta property="og:title" content="3.0.3" />
+    <meta property="twitter:title" content="3.0.3" />
+    
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/256x256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/512x512.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Capstone - The Ultimate Disassembler" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/img/capstone.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Capstone</a></h1>
+            <p class="site-description">The Ultimate Disassembler</p>
+          </div>
+
+          <nav>
+            <a href="/download.html">Download</a>
+            <a href="/documentation.html">Docs</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/testimonial.html">Testimonials</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/contact.html">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h2>3.0.3</h2>
+
+  <div class="date">
+    May  8, 2015
+  </div>
+
+
+  <div class="entry">
+    <p>Release 3.0.3 is a stable version with important fixes in the core &amp; Python bindings.</p>
+
+<p><br></p>
+
+<h4>Library</h4>
+
+<ul>
+<li>Released binaries for Windows are now compatible with Windows XP.</li>
+<li>Support to embed into Mac OS X kernel extensions.</li>
+<li>Now it is possible to compile Capstone with older C compilers, such as <em>GCC 4.8</em> on Ubuntu 12.04.</li>
+<li>Add <em>test_iter</em> to MSVC project.</li>
+</ul>
+
+<h4>X86</h4>
+
+<ul>
+<li>All shifted instructions (<em>SHL</em>, <em>SHR</em>, <em>SAL</em>, <em>SAR</em>, <em>RCL</em>, <em>RCR</em>, <em>ROL</em> &amp; <em>ROR</em>) now support $1 as first operand in <em>AT&amp;T</em> syntax (so we have <em>rcll $1, %edx</em> instead of <em>rcll %edx</em>).</li>
+<li><em>CMPXCHG16B</em> is a valid instruction with <em>LOCK</em> prefix.</li>
+<li>Fixed a segfault on the input of <em>0xF3</em>.</li>
+</ul>
+
+<h4>Arm</h4>
+
+<ul>
+<li><em>BLX</em> instruction modifies <em>PC</em> &amp; <em>LR</em> registers.</li>
+</ul>
+
+<h4>Sparc</h4>
+
+<ul>
+<li>Improved displacement decoding for sparc banching instructions.</li>
+</ul>
+
+<h4>Python binding</h4>
+
+<ul>
+<li>Fix for Cython so it can properly initialize.</li>
+<li><em>X86Op.avx<em>zero</em>mask</em> now has <em>c_bool</em> type, but not <em>c_uint8</em> type.</li>
+<li>Properly support compile with <em>Cygwin</em> &amp; install binding (<em>setup.py</em>).</li>
+</ul>
+
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:capstone.engine@gmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/aquynh/capstone"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/capstone_engine"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

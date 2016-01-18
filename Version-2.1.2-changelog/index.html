@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2.1.2 – Capstone – The Ultimate Disassembler</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Release 2.1.2 is a stable version with some minor bugfixes and improvements in the core.
+" />
+    <meta property="og:description" content="Release 2.1.2 is a stable version with some minor bugfixes and improvements in the core.
+" />
+    
+    <meta name="author" content="Capstone" />
+
+    
+    <meta property="og:title" content="2.1.2" />
+    <meta property="twitter:title" content="2.1.2" />
+    
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/256x256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/512x512.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Capstone - The Ultimate Disassembler" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/img/capstone.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Capstone</a></h1>
+            <p class="site-description">The Ultimate Disassembler</p>
+          </div>
+
+          <nav>
+            <a href="/download.html">Download</a>
+            <a href="/documentation.html">Docs</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/testimonial.html">Testimonials</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/contact.html">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h2>2.1.2</h2>
+
+  <div class="date">
+    April  3, 2014
+  </div>
+
+
+  <div class="entry">
+    <p>Release 2.1.2 is a stable version with some minor bugfixes and improvements in the core.</p>
+
+<h4>Core changes</h4>
+
+<ul>
+<li><p>Support cross-compilation for all iDevices (iPhone/iPad/iPod).</p></li>
+<li><p>X86: do not print memory offset in negative form.</p></li>
+<li><p>Fix a bug in X86 when Capstone cannot handle short instruction.</p></li>
+<li><p>Print negative numbers in range [-9, -1] without prefix 0x (arm64, mips, arm).</p></li>
+<li><p>Correct the SONAME setup for library versioning on Linux, *BSD &amp; Solaris.</p></li>
+<li><p>Set library versioning for dylib of OSX.</p></li>
+<li><p>Remove the redundant <em>include/diet.h</em></p></li>
+</ul>
+
+<h4>NOTE</h4>
+
+<ul>
+<li><p>This release fixes the library versioning for Mac OSX, Linux, *BSD &amp; Solaris. This might require recompiling tools compiled with prior Capstone - but there is no need to modify tools&#39; source whatsoever.</p></li>
+<li><p>This version made no API change, so old bindings of release 2.1 still work just fine. The only exception is Python binding package for Windows in <a href="download.html">Download</a> section: users still need to upgrade this since this package actually includes the new core engine 2.1.2 inside.</p></li>
+</ul>
+
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:capstone.engine@gmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/aquynh/capstone"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/capstone_engine"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

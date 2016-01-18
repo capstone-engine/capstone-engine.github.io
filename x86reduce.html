@@ -1,21 +1,180 @@
-<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Capstone - X86-reduce engine</title><link rel="stylesheet" href="css/style.css" type="text/css" media="all"><link rel="stylesheet" href="css/pygments.css" type="text/css" media="all"><link rel="alternate" href="feed/index.xml" type="application/atom+xml" title="Atom Feed"></head><body><div id="fb-root"></div> <script>!function(e,t,n){var c,o=e.getElementsByTagName(t)[0];e.getElementById(n)||(c=e.createElement(t),c.id=n,c.src="//connect.facebook.net/en_US/all.js#xfbml=1",o.parentNode.insertBefore(c,o))}(document,"script","facebook-jssdk")</script><script>!function(t,e,r){var n,s=t.getElementsByTagName(e)[0],i=/^http:/.test(t.location)?"http":"https";t.getElementById(r)||(n=t.createElement(e),n.id=r,n.src=i+"://platform.twitter.com/widgets.js",s.parentNode.insertBefore(n,s))}(document,"script","twitter-wjs")</script><script>!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://apis.google.com/js/plusone.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="page"> <header> <a href="index.html" id="cs_home">Capstone</a> <nav> <a href="index.html">Home</a> <a href="download.html">Download</a> <a href="documentation.html">Docs</a> <a href="showcase.html">Showcase</a> <a href="testimonial.html">Testimonials</a> <a href="donate.html">Donate</a> <a href="contact.html">Contact</a> </nav> </header> <section><h2 id="building-x86-reduce-engine">Building X86-reduce engine</h2><p>(Note: at the moment, this <em>X86-reduce</em> option is only availabe in the <a href="https://github.com/aquynh/capstone/tree/next">next branch</a> of our Github repo. It will be integrated into the next release of Capstone)</p><p>This documentation introduces how to build the X86 engine of Capstone to be as small as <em>200KB</em> - about <em>60% smaller</em> than the <a href="diet.html">diet engine</a> - for embedding purpose.</p><p>Later part presents the APIs related to this reduced mode.</p><h3 id="building-a-small-engine">1. Building a small engine</h3><p>Typically, we use Capstone for usual applications, where the library weight does not really matter. Indeed, as of version <em>2.1-RC1</em>, the whole engine is only 1.9 MB including all architectures, and this size raises no issue to most people.</p><p>However, to embed Capstone into special enviroments, such as OS kernel driver or firmware, the engine size should be as small as possible due to space restriction. To achieve this object, we must compile Capstone using special methods.</p><p>To build a tiny engine, consult three documentations below.</p><ul><li><p><a href="compile.html">Build only selected architectures to suite your need</a>.</p></li><li><p><a href="diet.html">Build diet engine</a>.</p></li><li><p><a href="embed.html">Build embedded engine for firmware/OS kernel</a></p></li></ul><p>For X86 architecture, after applying all of the above techniques, the binary size of Capstone reduces to around 486KB. If you still desire a smaller engine, Capstone has another <em>compile time option</em> called <strong>X86-reduce</strong>.</p><h3 id="building-x86-reduce-engine-1">2. Building X86-reduce engine</h3><p>To reduce the X86 engine even futher, compile Capstone in <em>X86-reduce</em> mode to remove some exotic non-critical X86 instruction sets. As a result, this downsizes the engine by <em>around 60%</em>, to under <em>200KB</em>.</p><p>Below is the list of instruction sets removed by this option:</p><ul><li><p>Floating Point Unit (FPU)</p></li><li><p>MultiMedia eXtension (MMX)</p></li><li><p>Streaming SIMD Extensions (SSE)</p></li><li><p>3DNow</p></li><li><p>Advanced Vector Extensions (AVX)</p></li><li><p>Fused Multiply Add Operations (FMA)</p></li><li><p>eXtended Operations (XOP)</p></li><li><p>Transactional Synchronization Extensions (TSX)</p></li></ul><p><br/> Obviously, the price to pay for this tiny size is that the engine can no longer understand the removed instructions. But in special environments such as OS kernel, where these instructions are never used, this is acceptable.</p><p>By default, Capstone for X86 is built with complete instructions. To build and install the <em>X86-reduce</em> engine, do: (demonstration is on *nix systems)</p><div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ CAPSTONE_X86_REDUCE</span><span class="o">=</span>yes ./make.sh
-<span class="nv">$ </span>sudo ./make.sh install</code></pre></div><h3 id="checking-x86-engine-for-reduce-status">3. Checking X86 engine for “reduce” status</h3><p>Capstone allows us to check if the engine was compiled in <em>X86-reduce</em> mode with <strong>cs_support()</strong> API, as follows - sample code in C.</p><div class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">if</span> <span class="p">(</span><span class="n">cs_support</span><span class="p">(</span><span class="n">CS_SUPPORT_X86_REDUCE</span><span class="p">))</span> <span class="p">{</span>
-	<span class="c1">// Engine is in X86-reduce mode.</span>
-	<span class="c1">// ...</span>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>X86-reduce engine – Capstone – The Ultimate Disassembler</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="The Ultimate Disassembler">
+    <meta property="og:description" content="The Ultimate Disassembler" />
+    
+    <meta name="author" content="Capstone" />
+
+    
+    <meta property="og:title" content="X86-reduce engine" />
+    <meta property="twitter:title" content="X86-reduce engine" />
+    
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/256x256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/512x512.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Capstone - The Ultimate Disassembler" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/img/capstone.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Capstone</a></h1>
+            <p class="site-description">The Ultimate Disassembler</p>
+          </div>
+
+          <nav>
+            <a href="/download.html">Download</a>
+            <a href="/documentation.html">Docs</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/testimonial.html">Testimonials</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/contact.html">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <h2>Building X86-reduce engine</h2>
+
+<p>(Note: at the moment, this <em>X86-reduce</em> option is only availabe in the <a href="https://github.com/aquynh/capstone/tree/next">next branch</a> of our Github repo. It will be integrated into the next release of Capstone)</p>
+
+<p>This documentation introduces how to build the X86 engine of Capstone to be as small as <em>200KB</em> - about <em>60% smaller</em> than the <a href="diet.html">diet engine</a> - for embedding purpose.</p>
+
+<p>Later part presents the APIs related to this reduced mode.</p>
+
+<h3>1. Building a small engine</h3>
+
+<p>Typically, we use Capstone for usual applications, where the library weight does not really matter. Indeed, as of version <em>2.1-RC1</em>, the whole engine is only 1.9 MB including all architectures, and this size raises no issue to most people.</p>
+
+<p>However, to embed Capstone into special enviroments, such as OS kernel driver or firmware, the engine size should be as small as possible due to space restriction. To achieve this object, we must compile Capstone using special methods.</p>
+
+<p>To build a tiny engine, consult three documentations below.</p>
+
+<ul>
+<li><p><a href="compile.html">Build only selected architectures to suite your need</a>.</p></li>
+<li><p><a href="diet.html">Build diet engine</a>.</p></li>
+<li><p><a href="embed.html">Build embedded engine for firmware/OS kernel</a></p></li>
+</ul>
+
+<p>For X86 architecture, after applying all of the above techniques, the binary size of Capstone reduces to around 486KB. If you still desire a smaller engine, Capstone has another <em>compile time option</em> called <strong>X86-reduce</strong>.</p>
+
+<h3>2. Building X86-reduce engine</h3>
+
+<p>To reduce the X86 engine even futher, compile Capstone in <em>X86-reduce</em> mode to remove some exotic non-critical X86 instruction sets. As a result, this downsizes the engine by <em>around 60%</em>, to under <em>200KB</em>.</p>
+
+<p>Below is the list of instruction sets removed by this option:</p>
+
+<ul>
+<li><p>Floating Point Unit (FPU)</p></li>
+<li><p>MultiMedia eXtension (MMX)</p></li>
+<li><p>Streaming SIMD Extensions (SSE)</p></li>
+<li><p>3DNow</p></li>
+<li><p>Advanced Vector Extensions (AVX)</p></li>
+<li><p>Fused Multiply Add Operations (FMA)</p></li>
+<li><p>eXtended Operations (XOP)</p></li>
+<li><p>Transactional Synchronization Extensions (TSX)</p></li>
+</ul>
+
+<p><br>
+Obviously, the price to pay for this tiny size is that the engine can no longer understand the removed instructions. But in special environments such as OS kernel, where these instructions are never used, this is acceptable.</p>
+
+<p>By default, Capstone for X86 is built with complete instructions. To build and install the <em>X86-reduce</em> engine, do: (demonstration is on *nix systems)</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ CAPSTONE_X86_REDUCE</span><span class="o">=</span>yes ./make.sh
+<span class="nv">$ </span>sudo ./make.sh install</code></pre></div>
+
+<h3>3. Checking X86 engine for &quot;reduce&quot; status</h3>
+
+<p>Capstone allows us to check if the engine was compiled in <em>X86-reduce</em> mode with <strong>cs_support()</strong> API, as follows - sample code in C.</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">if</span> <span class="p">(</span><span class="n">cs_support</span><span class="p">(</span><span class="n">CS_SUPPORT_X86_REDUCE</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// Engine is in X86-reduce mode.</span>
+    <span class="c1">// ...</span>
 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-	<span class="c1">// Engine was compiled with complete instructions.</span>
-	<span class="c1">// ...</span>
-<span class="p">}</span></code></pre></div><p><br/> With Python, we can either check the <em>X86-reduce</em> mode via the function <strong>cs_support</strong> of <em>capstone</em> module, as follows.</p><div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">capstone</span> <span class="kn">import</span> <span class="o">*</span>
+    <span class="c1">// Engine was compiled with complete instructions.</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span></code></pre></div>
+
+<p><br>
+With Python, we can either check the <em>X86-reduce</em> mode via the function <strong>cs_support</strong> of <em>capstone</em> module, as follows.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">capstone</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">if</span> <span class="n">cs_support</span><span class="p">(</span><span class="n">CS_SUPPORT_X86_REDUCE</span><span class="p">):</span>
     <span class="c"># engine is in X86-reduce mode</span>
     <span class="c"># ....</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="c"># engine was compiled with complete instructions.</span>
-    <span class="c"># ....</span></code></pre></div><p><br/> Or we can also use the <strong>x86_reduce</strong> getter of <em>Cs</em> class for the same purpose, as follows.</p><div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">cs</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_64</span><span class="p">)</span>
+    <span class="c"># ....</span></code></pre></div>
+
+<p><br>
+Or we can also use the <strong>x86_reduce</strong> getter of <em>Cs</em> class for the same purpose, as follows.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">cs</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_64</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">cs</span><span class="o">.</span><span class="n">x86_reduce</span><span class="p">:</span>
     <span class="c"># engine is in X86-reduce mode</span>
     <span class="c"># ....</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="c"># engine was compiled in standard mode</span>
-    <span class="c"># ....</span></code></pre></div></section> <footer> </footer></div></body></html>
+    <span class="c"># ....</span></code></pre></div>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:capstone.engine@gmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/aquynh/capstone"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/capstone_engine"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

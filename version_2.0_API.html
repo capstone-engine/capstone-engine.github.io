@@ -1,13 +1,156 @@
-<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Capstone - Version 2.0</title><link rel="stylesheet" href="css/style.css" type="text/css" media="all"><link rel="stylesheet" href="css/pygments.css" type="text/css" media="all"><link rel="alternate" href="feed/index.xml" type="application/atom+xml" title="Atom Feed"></head><body><div id="fb-root"></div> <script>!function(e,t,n){var c,o=e.getElementsByTagName(t)[0];e.getElementById(n)||(c=e.createElement(t),c.id=n,c.src="//connect.facebook.net/en_US/all.js#xfbml=1",o.parentNode.insertBefore(c,o))}(document,"script","facebook-jssdk")</script><script>!function(t,e,r){var n,s=t.getElementsByTagName(e)[0],i=/^http:/.test(t.location)?"http":"https";t.getElementById(r)||(n=t.createElement(e),n.id=r,n.src=i+"://platform.twitter.com/widgets.js",s.parentNode.insertBefore(n,s))}(document,"script","twitter-wjs")</script><script>!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://apis.google.com/js/plusone.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="page"> <header> <a href="index.html" id="cs_home">Capstone</a> <nav> <a href="index.html">Home</a> <a href="download.html">Download</a> <a href="documentation.html">Docs</a> <a href="showcase.html">Showcase</a> <a href="testimonial.html">Testimonials</a> <a href="donate.html">Donate</a> <a href="contact.html">Contact</a> </nav> </header> <section><h2 id="changes-from-10-to-20">Changes from 1.0 to 2.0</h2><p>After version 2.0 was released to public, we no longer support version 1.0. For this reason, we strongly recommend users to switch to 2.0 ASAP.</p><p>This documentation explains how to adapt code written for Capstone version 1.0 to work with API changes made by 2.0. Fortunately, the changes to be made are minimal &amp; trivial: this would take tool authors just few minutes to fix their existent code to upgrade to the new API in 2.0.</p><p>Depending on the programming language your tool uses (either C, Python or Java), find the corresponding section below.</p><hr/><h3 id="c-code">C code</h3><ul><li>From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.</li></ul><div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">csh</span> <span class="n">handle</span><span class="p">;</span>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Version 2.0 – Capstone – The Ultimate Disassembler</title>
 
-	<span class="n">cs_open</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_64</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">handle</span><span class="p">);</span>
-	<span class="n">cs_option</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">CS_OPT_DETAIL</span><span class="p">,</span> <span class="n">CS_OPT_ON</span><span class="p">);</span> <span class="c1">// generate details with CS_OPT_ON</span></code></pre></div><p>Afterwards, access to instruction details are done exactly like in version 1.0.</p><ul><li><p>The APIs <strong>cs_disasm()</strong> &amp; <strong>cs_disasm_dyn()</strong> has been dropped, and users should switch to use the new API <em>cs_disasm_ex()</em> (see below).</p></li><li><p>New API <strong>cs_disasm_ex()</strong> works exactly like the old <em>cs_disasm_dyn()</em>, so you just simply need to rename all code calling <em>cs_disasm_dyn()</em> to call <em>cs_disasm_ex()</em> instead.</p></li><li><p>The API <strong>cs_free()</strong> now accepts one more argument: this second parameter is the number of disassembled instructions returned by <em>cs_disasm_ex()</em>. See example below.</p></li></ul><div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">cs_insn</span> <span class="o">*</span><span class="n">insn</span><span class="p">;</span>
-	<span class="kt">size_t</span> <span class="n">count</span> <span class="o">=</span> <span class="n">cs_disasm_dyn</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">CODE</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">CODE</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mh">0x1000</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">insn</span><span class="p">);</span>
-	<span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-		<span class="c1">// do something with disassembled instructions in insn ...</span>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-		<span class="c1">// when done, free @insn with @count as second parameter of cs_free()</span>
-		<span class="n">cs_free</span><span class="p">(</span><span class="n">insn</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
-	<span class="p">}</span></code></pre></div><hr/><h3 id="python-code">Python code</h3><p>From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.</p><div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">md</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_32</span><span class="p">)</span>
-	<span class="n">md</span><span class="o">.</span><span class="n">detail</span> <span class="o">=</span> <span class="bp">True</span>  <span class="c"># generate details by turning detail property to True</span></code></pre></div><p>Afterwards, access to instruction details are done exactly like in version 1.0.</p><hr/><h3 id="java-code">Java code</h3><p>From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.</p><div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">md</span> <span class="o">=</span> <span class="n">capstone</span><span class="o">.</span><span class="na">Capstone</span><span class="o">(</span><span class="n">Capstone</span><span class="o">.</span><span class="na">CS_ARCH_X86</span><span class="o">,</span> <span class="n">Capstone</span><span class="o">.</span><span class="na">CS_MODE_32</span><span class="o">)</span>
-	<span class="n">md</span><span class="o">.</span><span class="na">setDetail</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span>  <span class="c1">// generate details by turning detail property to True</span></code></pre></div><p>Afterwards, access to instruction details are done exactly like in version 1.0.</p></section> <footer> </footer></div></body></html>
+    
+    <meta name="description" content="The Ultimate Disassembler">
+    <meta property="og:description" content="The Ultimate Disassembler" />
+    
+    <meta name="author" content="Capstone" />
+
+    
+    <meta property="og:title" content="Version 2.0" />
+    <meta property="twitter:title" content="Version 2.0" />
+    
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/256x256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/512x512.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Capstone - The Ultimate Disassembler" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/img/capstone.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Capstone</a></h1>
+            <p class="site-description">The Ultimate Disassembler</p>
+          </div>
+
+          <nav>
+            <a href="/download.html">Download</a>
+            <a href="/documentation.html">Docs</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/testimonial.html">Testimonials</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/contact.html">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <h2>Changes from 1.0 to 2.0</h2>
+
+<p>After version 2.0 was released to public, we no longer support version 1.0. For this reason, we strongly recommend users to switch to 2.0 ASAP.</p>
+
+<p>This documentation explains how to adapt code written for Capstone version 1.0 to work with API changes made by 2.0. Fortunately, the changes to be made are minimal &amp; trivial: this would take tool authors just few minutes to fix their existent code to upgrade to the new API in 2.0.</p>
+
+<p>Depending on the programming language your tool uses (either C, Python or Java), find the corresponding section below.</p>
+
+<hr>
+
+<h3>C code</h3>
+
+<ul>
+<li>From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">csh</span> <span class="n">handle</span><span class="p">;</span>
+
+    <span class="n">cs_open</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_64</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">handle</span><span class="p">);</span>
+    <span class="n">cs_option</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">CS_OPT_DETAIL</span><span class="p">,</span> <span class="n">CS_OPT_ON</span><span class="p">);</span> <span class="c1">// generate details with CS_OPT_ON</span></code></pre></div>
+
+<p>Afterwards, access to instruction details are done exactly like in version 1.0.</p>
+
+<ul>
+<li><p>The APIs <strong>cs_disasm()</strong> &amp; <strong>cs<em>disasm</em>dyn()</strong> has been dropped, and users should switch to use the new API <em>cs<em>disasm</em>ex()</em> (see below).</p></li>
+<li><p>New API <strong>cs<em>disasm</em>ex()</strong> works exactly like the old <em>cs<em>disasm</em>dyn()</em>, so you just simply need to rename all code calling <em>cs<em>disasm</em>dyn()</em> to call <em>cs<em>disasm</em>ex()</em> instead.</p></li>
+<li><p>The API <strong>cs_free()</strong> now accepts one more argument: this second parameter is the number of disassembled instructions returned by <em>cs<em>disasm</em>ex()</em>. See example below.</p></li>
+</ul>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">cs_insn</span> <span class="o">*</span><span class="n">insn</span><span class="p">;</span>
+    <span class="kt">size_t</span> <span class="n">count</span> <span class="o">=</span> <span class="n">cs_disasm_dyn</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">CODE</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">CODE</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mh">0x1000</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">insn</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// do something with disassembled instructions in insn ...</span>
+
+        <span class="c1">// when done, free @insn with @count as second parameter of cs_free()</span>
+        <span class="n">cs_free</span><span class="p">(</span><span class="n">insn</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+    <span class="p">}</span></code></pre></div>
+
+<hr>
+
+<h3>Python code</h3>
+
+<p>From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">md</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_32</span><span class="p">)</span>
+    <span class="n">md</span><span class="o">.</span><span class="n">detail</span> <span class="o">=</span> <span class="bp">True</span>  <span class="c"># generate details by turning detail property to True</span></code></pre></div>
+
+<p>Afterwards, access to instruction details are done exactly like in version 1.0.</p>
+
+<hr>
+
+<h3>Java code</h3>
+
+<p>From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">md</span> <span class="o">=</span> <span class="n">capstone</span><span class="o">.</span><span class="na">Capstone</span><span class="o">(</span><span class="n">Capstone</span><span class="o">.</span><span class="na">CS_ARCH_X86</span><span class="o">,</span> <span class="n">Capstone</span><span class="o">.</span><span class="na">CS_MODE_32</span><span class="o">)</span>
+    <span class="n">md</span><span class="o">.</span><span class="na">setDetail</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span>  <span class="c1">// generate details by turning detail property to True</span></code></pre></div>
+
+<p>Afterwards, access to instruction details are done exactly like in version 1.0.</p>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:capstone.engine@gmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/aquynh/capstone"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/capstone_engine"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

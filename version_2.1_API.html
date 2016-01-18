@@ -1,5 +1,145 @@
-<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Capstone - Version 2.0</title><link rel="stylesheet" href="css/style.css" type="text/css" media="all"><link rel="stylesheet" href="css/pygments.css" type="text/css" media="all"><link rel="alternate" href="feed/index.xml" type="application/atom+xml" title="Atom Feed"></head><body><div id="fb-root"></div> <script>!function(e,t,n){var c,o=e.getElementsByTagName(t)[0];e.getElementById(n)||(c=e.createElement(t),c.id=n,c.src="//connect.facebook.net/en_US/all.js#xfbml=1",o.parentNode.insertBefore(c,o))}(document,"script","facebook-jssdk")</script><script>!function(t,e,r){var n,s=t.getElementsByTagName(e)[0],i=/^http:/.test(t.location)?"http":"https";t.getElementById(r)||(n=t.createElement(e),n.id=r,n.src=i+"://platform.twitter.com/widgets.js",s.parentNode.insertBefore(n,s))}(document,"script","twitter-wjs")</script><script>!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://apis.google.com/js/plusone.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="page"> <header> <a href="index.html" id="cs_home">Capstone</a> <nav> <a href="index.html">Home</a> <a href="download.html">Download</a> <a href="documentation.html">Docs</a> <a href="showcase.html">Showcase</a> <a href="testimonial.html">Testimonials</a> <a href="donate.html">Donate</a> <a href="contact.html">Contact</a> </nav> </header> <section><h2 id="changes-from-20-to-21">Changes from 2.0 to 2.1</h2><p>This documentation describes how to adapt code written for Capstone version <em>2.0</em> to version <strong>2.1</strong>. Fortunately, the changes to be made are trivial, if any:</p><ul><li><p>Tools written in C just need some minimal modification to one API (see section 1).</p></li><li><p>Code developed in other binding languages (Java, Python) do not need any change. The bindings must be upgraded, however (see section 2).</p></li></ul><hr/><p>### 1. API change</p><p>Version 2.1 changes the API <strong>cs_close()</strong> from prototype:</p><div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">cs_err</span> <span class="nf">cs_close</span><span class="p">(</span><span class="n">csh</span> <span class="n">handle</span><span class="p">);</span>   <span class="c1">// in 2.0, cs_close() used to take handle as argument.</span></code></pre></div><p>to:</p><div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">cs_err</span> <span class="nf">cs_close</span><span class="p">(</span><span class="n">csh</span> <span class="o">*</span><span class="n">handle</span><span class="p">);</span>  <span class="c1">// &lt;-- now cs_close() takes pointer to handle as argument.</span></code></pre></div><p><br/> Therefore, all C code written on top of Capstone must be fixed accordingly, from something like:</p><div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">csh</span> <span class="n">handle</span><span class="p">;</span>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Version 2.0 – Capstone – The Ultimate Disassembler</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="The Ultimate Disassembler">
+    <meta property="og:description" content="The Ultimate Disassembler" />
+    
+    <meta name="author" content="Capstone" />
+
+    
+    <meta property="og:title" content="Version 2.0" />
+    <meta property="twitter:title" content="Version 2.0" />
+    
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/256x256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/512x512.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Capstone - The Ultimate Disassembler" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/img/capstone.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Capstone</a></h1>
+            <p class="site-description">The Ultimate Disassembler</p>
+          </div>
+
+          <nav>
+            <a href="/download.html">Download</a>
+            <a href="/documentation.html">Docs</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/testimonial.html">Testimonials</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/contact.html">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <h2>Changes from 2.0 to 2.1</h2>
+
+<p>This documentation describes how to adapt code written for Capstone version <em>2.0</em> to version <strong>2.1</strong>. Fortunately, the changes to be made are trivial, if any:</p>
+
+<ul>
+<li><p>Tools written in C just need some minimal modification to one API (see section 1).</p></li>
+<li><p>Code developed in other binding languages (Java, Python) do not need any change. The bindings must be upgraded, however (see section 2).</p></li>
+</ul>
+
+<hr>
+
+<h3>1. API change</h3>
+
+<p>Version 2.1 changes the API <strong>cs_close()</strong> from prototype:</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">cs_err</span> <span class="nf">cs_close</span><span class="p">(</span><span class="n">csh</span> <span class="n">handle</span><span class="p">);</span>   <span class="c1">// in 2.0, cs_close() used to take handle as argument.</span></code></pre></div>
+
+<p>to:</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">cs_err</span> <span class="nf">cs_close</span><span class="p">(</span><span class="n">csh</span> <span class="o">*</span><span class="n">handle</span><span class="p">);</span>  <span class="c1">// &lt;-- now cs_close() takes pointer to handle as argument.</span></code></pre></div>
+
+<p><br>
+Therefore, all C code written on top of Capstone must be fixed accordingly, from something like:</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">csh</span> <span class="n">handle</span><span class="p">;</span>
     <span class="c1">//....</span>
-    <span class="n">cs_close</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>   <span class="c1">// in 2.0, cs_close() used to take handle as argument.</span></code></pre></div><p>to:</p><div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">csh</span> <span class="n">handle</span><span class="p">;</span>
+    <span class="n">cs_close</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>   <span class="c1">// in 2.0, cs_close() used to take handle as argument.</span></code></pre></div>
+
+<p>to:</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">csh</span> <span class="n">handle</span><span class="p">;</span>
     <span class="c1">//....</span>
-    <span class="n">cs_close</span><span class="p">(</span><span class="o">&amp;</span><span class="n">handle</span><span class="p">);</span>  <span class="c1">// &lt;-- now cs_close() takes pointer to handle as argument.</span></code></pre></div><p><br/> Internally, this change is to invalidate @handle, making sure it cannot be mistakenly used after the handle is closed.</p><p><br/> <code>NOTE</code>: this change <strong>breaks backward compatibility for C code only</strong>. All the bindings of Python, Java or bindings made by community, such as C#, Go, Ruby &amp; Vala, should hide this change behind their API. For this reason, code using these bindings still work exactly like before and do not need to have any modification.</p><hr/><p>### 2. Upgrade bindings</p><p>Version 2.1 makes some changes to Java &amp; Python bindings, like adding some new instructions (affecting *_const.py &amp; *_const.java). While this <em>does not break API compatibility</em> (i.e users do not need to modify their program written with prior version 2.0), they <strong>must upgrade these bindings</strong> and <strong>must not use the old bindings from prior versions</strong>.</p><p><br/> We cannot emphasize this enough: When upgrading to the new engine, <strong>always upgrade to the bindings coming with the same core</strong>. If you do not follow this principle, applications written with old bindings would run with the new incompatible core, thus silently break without any clear evidence, making it extremely hard to debug.</p></section> <footer> </footer></div></body></html>
+    <span class="n">cs_close</span><span class="p">(</span><span class="o">&amp;</span><span class="n">handle</span><span class="p">);</span>  <span class="c1">// &lt;-- now cs_close() takes pointer to handle as argument.</span></code></pre></div>
+
+<p><br>
+Internally, this change is to invalidate @handle, making sure it cannot be mistakenly used after the handle is closed.</p>
+
+<p><br>
+<code>NOTE</code>: this change <strong>breaks backward compatibility for C code only</strong>. All the bindings of Python, Java or bindings made by community, such as C#, Go, Ruby &amp; Vala, should hide this change behind their API. For this reason, code using these bindings still work exactly like before and do not need to have any modification.</p>
+
+<hr>
+
+<h3>2. Upgrade bindings</h3>
+
+<p>Version 2.1 makes some changes to Java &amp; Python bindings, like adding some new instructions (affecting *<em>const.py &amp; *</em>const.java). While this <em>does not break API compatibility</em> (i.e users do not need to modify their program written with prior version 2.0), they <strong>must upgrade these bindings</strong> and <strong>must not use the old bindings from prior versions</strong>.</p>
+
+<p><br>
+We cannot emphasize this enough: When upgrading to the new engine, <strong>always upgrade to the bindings coming with the same core</strong>. If you do not follow this principle, applications written with old bindings would run with the new incompatible core, thus silently break without any clear evidence, making it extremely hard to debug.</p>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:capstone.engine@gmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/aquynh/capstone"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/capstone_engine"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
