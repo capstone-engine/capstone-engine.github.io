@@ -72,10 +72,10 @@
 
 <h3>1. Get access info of registers</h3>
 
-<p>Now available in the Github branch <a href="https://github.com/aquynh/capstone/tree/next">next</a>, Capstone provides a new API named <strong>cs<em>regs</em>access()</strong>. This function can retrieve the list of all registers <em>read</em> or <em>modified</em> - either implicitly or explicitly - by instructions.</p>
+<p>Now available in the Github branch <a href="https://github.com/aquynh/capstone/tree/next">next</a>, Capstone provides a new API named <strong>cs_regs_access()</strong>. This function can retrieve the list of all registers <em>read</em> or <em>modified</em> - either implicitly or explicitly - by instructions.</p>
 
 <p><br>
-The C sample code below demonstrates how to use <em>cs<em>regs</em>access</em> on X86 input.</p>
+The C sample code below demonstrates how to use <em>cs_regs_access</em> on X86 input.</p>
 
 <div class="highlight"><pre><code class="language-c" data-lang="c"><span class="lineno"> 1</span> <span class="cp">#include &lt;stdio.h&gt;</span>
 <span class="lineno"> 2</span> 
@@ -153,8 +153,8 @@ Below is the explanation for important lines of the above C sample.</p>
 <li><p>Line 12: Declare variables <em>regs_read</em> &amp; <em>regs_write</em> of data type <em>cs_regs</em> to keep the list of registers being read or modified later. Note that <em>cs_regs</em> is actually a data type of an array of <em>uint16_t</em>.</p></li>
 <li><p>Line 15 ~ 18: Intialize X86 engine, then turn on the <em>DETAIL</em> mode, which is required to get the access information of operands &amp; registers.</p></li>
 <li><p>Line 20 ~ 24: Disassemble input code, then print out the assembly of all the instructions.</p></li>
-<li><p>Line 27 ~ 29: Retrieve access information of registers with <em>cs<em>regs</em>access()</em>. After this, <em>regs_read</em> &amp; <em>regs_write</em> keep all the registers being read &amp; modified by current assembly instructions. Meanwhile, <em>read_count</em> &amp; <em>write_count</em> contain number of registers kept inside array <em>regs_read</em> &amp; <em>regs_write</em>, respectively.</p></li>
-<li><p>Line 30 ~ 36: If there are registers being read (see the checking condition <em>read_count &gt; 0</em>), print out these registers inside <em>regs_read</em> array. Register name is retrieved with the API <em>cs<em>reg</em>name()</em>.</p></li>
+<li><p>Line 27 ~ 29: Retrieve access information of registers with <em>cs_regs_access()</em>. After this, <em>regs_read</em> &amp; <em>regs_write</em> keep all the registers being read &amp; modified by current assembly instructions. Meanwhile, <em>read_count</em> &amp; <em>write_count</em> contain number of registers kept inside array <em>regs_read</em> &amp; <em>regs_write</em>, respectively.</p></li>
+<li><p>Line 30 ~ 36: If there are registers being read (see the checking condition <em>read_count &gt; 0</em>), print out these registers inside <em>regs_read</em> array. Register name is retrieved with the API <em>cs_reg_name()</em>.</p></li>
 <li><p>Line 38 ~ 44: If there are registers being modified (see the checking condition <em>write_count &gt; 0</em>), print out these registers inside <em>regs_write</em> array.</p></li>
 </ul>
 
