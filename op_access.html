@@ -165,7 +165,7 @@ For those readers more familiar with Python, the below code does the same thing 
 <span class="lineno"> 2</span> 
 <span class="lineno"> 3</span> <span class="n">CODE</span> <span class="o">=</span> <span class="n">b</span><span class="s">&quot;</span><span class="se">\x8d\x4c\x32\x08\x01\xd8</span><span class="s">&quot;</span>
 <span class="lineno"> 4</span> 
-<span class="lineno"> 5</span> <span class="n">md</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">arch</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span>
+<span class="lineno"> 5</span> <span class="n">md</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_32</span><span class="p">)</span>
 <span class="lineno"> 6</span> <span class="n">md</span><span class="o">.</span><span class="n">detail</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="lineno"> 7</span> 
 <span class="lineno"> 8</span> <span class="k">for</span> <span class="n">insn</span> <span class="ow">in</span> <span class="n">md</span><span class="o">.</span><span class="n">disasm</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="mh">0x1000</span><span class="p">):</span>
