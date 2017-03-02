@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3.0.5-rc2 – Capstone – The Ultimate Disassembler</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Release 3.0.5-RC2 is a release candidate version, with important fixes in the core &amp; several bindings.
+" />
+    <meta property="og:description" content="Release 3.0.5-RC2 is a release candidate version, with important fixes in the core &amp; several bindings.
+" />
+    
+    <meta name="author" content="Capstone" />
+
+    
+    <meta property="og:title" content="3.0.5-rc2" />
+    <meta property="twitter:title" content="3.0.5-rc2" />
+    
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/256x256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/512x512.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Capstone - The Ultimate Disassembler" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/img/capstone.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Capstone</a></h1>
+            <p class="site-description">The Ultimate Disassembler</p>
+          </div>
+
+          <nav>
+            <a href="/download.html">Download</a>
+            <a href="/documentation.html">Docs</a>
+            <a href="/showcase.html">Showcase</a>
+            <a href="/testimonial.html">Testimonials</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/contact.html">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h2>3.0.5-rc2</h2>
+
+  <div class="date">
+    March  2, 2017
+  </div>
+
+
+  <div class="entry">
+    <p>Release 3.0.5-RC2 is a release candidate version, with important fixes in the core &amp; several bindings.</p>
+
+<p><br></p>
+
+<h4>Library</h4>
+
+<ul>
+<li>Fix build for Visual Studio 2012</li>
+<li>Fix X86_REL_ADDR macro</li>
+<li>Add CS_VERSION_MAJOR, CS_VERSION_MINOR, CS_VERSION_EXTRA</li>
+<li>Better support for embedding Capstone into Windows kernel drivers</li>
+<li>Support to embedded Capstone into MacOS kernel</li>
+<li>Support MacOS 10.11 and up</li>
+<li>Better support for Cygwin</li>
+<li>Support build packages for FreeBSD &amp; DragonflyBSD</li>
+<li>Add a command-line tool &quot;cstool&quot;</li>
+<li>Properly handle switching to Endian mode at run-time for Arm, Arm64, Mips &amp; Sparc</li>
+</ul>
+
+<h4>X86</h4>
+
+<ul>
+<li>Some random 16-bit code can be handled wrongly.</li>
+<li>Remove abundant operand type X86_OP_FP</li>
+<li>Fix instructions MOVQ, LOOP, LOOPE, LOOPNE, CALL/JMP rel16, REPNE LODSD, MOV *AX, MOFFS, FAR JMP/CALL</li>
+<li>Add X86_REG_EFLAGS for STC and STD</li>
+<li>Fix instruction attributes for SYSEXIT, MOVW, ROL, LGS, SLDT</li>
+<li>Rename registers ST0-ST7 to be consistent with asm output</li>
+</ul>
+
+<h4>Arm</h4>
+
+<ul>
+<li>Properly handle IT instruction</li>
+<li>Fix LDRSB</li>
+<li>Fix writeback for LDR</li>
+<li>Fix Thumb BigEndian setup</li>
+</ul>
+
+<h4>Arm</h4>
+
+<ul>
+<li>Fix arith extender</li>
+<li>Fix writeback for LDR</li>
+<li>Rename enum arm64_mrs_reg to arm64_sysreg</li>
+</ul>
+
+<h4>PowerPC</h4>
+
+<ul>
+<li>Print 0 offset for memory operand</li>
+</ul>
+
+<h4>Sparc</h4>
+
+<ul>
+<li>Fix POPC instruction</li>
+</ul>
+
+<h4>Python binding</h4>
+
+<ul>
+<li>Better PyPy support</li>
+<li>Add __version__</li>
+<li>Better support for Python 3</li>
+<li>Fix CS_SKIPDATA_CALLBACK prototype</li>
+<li>Cast skipdata function inside binding to simplify the API</li>
+</ul>
+
+<h4>Java binding</h4>
+
+<ul>
+<li>Better handle input with invalid code</li>
+</ul>
+
+<h4>PowerShell binding</h4>
+
+<ul>
+<li>New binding</li>
+</ul>
+
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:capstone.engine@gmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/aquynh/capstone"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/capstone_engine"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

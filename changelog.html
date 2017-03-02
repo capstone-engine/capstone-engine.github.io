@@ -73,6 +73,103 @@
 <hr>
 
 <article>
+<a href="/Version-3.0.5-RC2-changelog">
+<h3>Version 3.0.5-rc2</h3>
+</a>
+<time datetime="2017-03-02">
+</time>
+<div class="date">
+<div class="dateday"> 2</div>
+<div>Mar</div>
+<div class="dateyear">2017</div>
+</div>
+
+<p>Release 3.0.5-RC2 is a release candidate version, with important fixes in the core &amp; several bindings.</p>
+
+<p><br></p>
+
+<h4>Library</h4>
+
+<ul>
+<li>Fix build for Visual Studio 2012</li>
+<li>Fix X86_REL_ADDR macro</li>
+<li>Add CS_VERSION_MAJOR, CS_VERSION_MINOR, CS_VERSION_EXTRA</li>
+<li>Better support for embedding Capstone into Windows kernel drivers</li>
+<li>Support to embedded Capstone into MacOS kernel</li>
+<li>Support MacOS 10.11 and up</li>
+<li>Better support for Cygwin</li>
+<li>Support build packages for FreeBSD &amp; DragonflyBSD</li>
+<li>Add a command-line tool &quot;cstool&quot;</li>
+<li>Properly handle switching to Endian mode at run-time for Arm, Arm64, Mips &amp; Sparc</li>
+</ul>
+
+<h4>X86</h4>
+
+<ul>
+<li>Some random 16-bit code can be handled wrongly.</li>
+<li>Remove abundant operand type X86_OP_FP</li>
+<li>Fix instructions MOVQ, LOOP, LOOPE, LOOPNE, CALL/JMP rel16, REPNE LODSD, MOV *AX, MOFFS, FAR JMP/CALL</li>
+<li>Add X86_REG_EFLAGS for STC and STD</li>
+<li>Fix instruction attributes for SYSEXIT, MOVW, ROL, LGS, SLDT</li>
+<li>Rename registers ST0-ST7 to be consistent with asm output</li>
+</ul>
+
+<h4>Arm</h4>
+
+<ul>
+<li>Properly handle IT instruction</li>
+<li>Fix LDRSB</li>
+<li>Fix writeback for LDR</li>
+<li>Fix Thumb BigEndian setup</li>
+</ul>
+
+<h4>Arm</h4>
+
+<ul>
+<li>Fix arith extender</li>
+<li>Fix writeback for LDR</li>
+<li>Rename enum arm64_mrs_reg to arm64_sysreg</li>
+</ul>
+
+<h4>PowerPC</h4>
+
+<ul>
+<li>Print 0 offset for memory operand</li>
+</ul>
+
+<h4>Sparc</h4>
+
+<ul>
+<li>Fix POPC instruction</li>
+</ul>
+
+<h4>Python binding</h4>
+
+<ul>
+<li>Better PyPy support</li>
+<li>Add __version__</li>
+<li>Better support for Python 3</li>
+<li>Fix CS_SKIPDATA_CALLBACK prototype</li>
+<li>Cast skipdata function inside binding to simplify the API</li>
+</ul>
+
+<h4>Java binding</h4>
+
+<ul>
+<li>Better handle input with invalid code</li>
+</ul>
+
+<h4>PowerShell binding</h4>
+
+<ul>
+<li>New binding</li>
+</ul>
+
+</article>
+
+<hr>
+
+<article>
 <a href="/Version-3.0.4-changelog">
 <h3>Version 3.0.4</h3>
 </a>
@@ -629,7 +726,7 @@ compiled in &amp; versions of core &amp; binding.</p></li>
 <li><em>make.sh</em> now can uninstall the core engine. This is done with:</li>
 </ul>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo ./make.sh uninstall</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>  $ sudo ./make.sh uninstall</code></pre></figure>
 
 </article>
 
