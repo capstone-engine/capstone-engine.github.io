@@ -74,7 +74,7 @@
 
 <p>In some architectures, an instruction might have alternative mnemonic. Example is the <em>JNE</em> instruction on <em>X86</em>: this is also called <em>JNZ</em> by some disassemblers. The problem is that all the mnemonics are fixed in the engine and cannot be customized. For this reason, some disassembly tools built on top of Capstone have to use some tricks to modify mnemonics at the output for what they desire.</p>
 
-<p>This has been changed with a new option <strong>CS<em>OPT</em>MNEMONIC</strong> (available in the Github branch <a href="https://github.com/aquynh/capstone/tree/next">next</a> now, and will be ready when version <em>4.0</em> is out). Use this option with <em>cs_option()</em> to customize instruction mnemonics, as in the sample C code below.</p>
+<p>This has been changed with a new option <strong>CS_OPT_MNEMONIC</strong> (available in the Github branch <a href="https://github.com/aquynh/capstone/tree/next">next</a> now, and will be ready when version <em>4.0</em> is out). Use this option with <em>cs_option()</em> to customize instruction mnemonics, as in the sample C code below.</p>
 
 <p><br></p>
 
@@ -95,7 +95,7 @@ Below is the explanation for important lines of the above C sample.</p>
 <ul>
 <li><p>Line 4: Declare variables <em>my_mnem</em> of data type <em>cs<em>opt</em>mnem</em> to customize <em>JNE</em> instruction (indicated by <em>X86<em>INS</em>JNE</em>) to have mnemonic <em>&quot;jnz&quot;</em>.</p></li>
 <li><p>Line 6: Intialize X86 engine of 32-bit mode.</p></li>
-<li><p>Line 7: Call <em>cs_option</em> with option <em>CS<em>OPT</em>MNEMONIC</em>, and pass the address of <em>my_mnem</em> in the third parameter. After this, we can start disassembling and instruction <em>JNE</em> will have <em>&quot;jnz&quot;</em> mnemonic, rather than the default value <em>&quot;jne&quot;</em>.</p></li>
+<li><p>Line 7: Call <em>cs_option</em> with option <em>CS_OPT_MNEMONIC</em>, and pass the address of <em>my_mnem</em> in the third parameter. After this, we can start disassembling and instruction <em>JNE</em> will have <em>&quot;jnz&quot;</em> mnemonic, rather than the default value <em>&quot;jne&quot;</em>.</p></li>
 </ul>
 
 <p><br>
@@ -108,7 +108,7 @@ The below Python code does the same thing as the above C sample. The only import
 <span class="lineno">5</span> <span class="n">md</span><span class="o">.</span><span class="n">mnemonic_setup</span><span class="p">(</span><span class="n">X86_INS_JNE</span><span class="p">,</span> <span class="s">&quot;jnz&quot;</span><span class="p">)</span></code></pre></div>
 
 <p><br>
-Finally, note that while the above samples are for X86, the same technique can be applied for all other architectures supported by Capstone. Because we can run <em>cs<em>option(CS</em>OPT_MNEMONIC)</em> as many times as we want, there is no limitation on the number of instructions we can customize.</p>
+Finally, note that while the above samples are for X86, the same technique can be applied for all other architectures supported by Capstone. Because we can run <em>cs<em>option(CS_OPT_MNEMONIC)</em> as many times as we want, there is no limitation on the number of instructions we can customize.</p>
 
 <hr>
 
@@ -136,7 +136,7 @@ The below Python sample does the same thing to reset the engine, which is self e
 
 <h3>3. More examples</h3>
 
-<p>Find the full samples on how to use <em>CS<em>OPT</em>MNEMONIC</em> in the source of <a href="https://github.com/aquynh/capstone/blob/next/tests/test_customized_mnem.c">test_x86.c</a> or <a href="https://github.com/aquynh/capstone/blob/next/bindings/python/test_customized_mnem.py">test_x86.py</a>.</p>
+<p>Find the full samples on how to use <em>CS_OPT_MNEMONIC</em> in the source of <a href="https://github.com/aquynh/capstone/blob/next/tests/test_customized_mnem.c">test_x86.c</a> or <a href="https://github.com/aquynh/capstone/blob/next/bindings/python/test_customized_mnem.py">test_x86.py</a>.</p>
 
 <p><br>
 When running these samples, the output is as follows.</p>
