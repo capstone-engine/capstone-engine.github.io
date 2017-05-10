@@ -93,7 +93,7 @@
 Below is the explanation for important lines of the above C sample.</p>
 
 <ul>
-<li><p>Line 4: Declare variables <em>my_mnem</em> of data type <em>cs<em>opt</em>mnem</em> to customize <em>JNE</em> instruction (indicated by <em>X86<em>INS</em>JNE</em>) to have mnemonic <em>&quot;jnz&quot;</em>.</p></li>
+<li><p>Line 4: Declare variables <em>my_mnem</em> of data type <em>cs_opt_mnem</em> to customize <em>JNE</em> instruction (indicated by <em>X86_INS_JNE</em>) to have mnemonic <em>&quot;jnz&quot;</em>.</p></li>
 <li><p>Line 6: Intialize X86 engine of 32-bit mode.</p></li>
 <li><p>Line 7: Call <em>cs_option</em> with option <em>CS_OPT_MNEMONIC</em>, and pass the address of <em>my_mnem</em> in the third parameter. After this, we can start disassembling and instruction <em>JNE</em> will have <em>&quot;jnz&quot;</em> mnemonic, rather than the default value <em>&quot;jne&quot;</em>.</p></li>
 </ul>
@@ -108,7 +108,7 @@ The below Python code does the same thing as the above C sample. The only import
 <span class="lineno">5</span> <span class="n">md</span><span class="o">.</span><span class="n">mnemonic_setup</span><span class="p">(</span><span class="n">X86_INS_JNE</span><span class="p">,</span> <span class="s">&quot;jnz&quot;</span><span class="p">)</span></code></pre></div>
 
 <p><br>
-Finally, note that while the above samples are for X86, the same technique can be applied for all other architectures supported by Capstone. Because we can run <em>cs<em>option(CS_OPT_MNEMONIC)</em> as many times as we want, there is no limitation on the number of instructions we can customize.</p>
+Finally, note that while the above samples are for X86, the same technique can be applied for all other architectures supported by Capstone. Because we can run <em>cs_option(CS_OPT_MNEMONIC)</em> as many times as we want, there is no limitation on the number of instructions we can customize.</p>
 
 <hr>
 
@@ -125,7 +125,7 @@ Finally, note that while the above samples are for X86, the same technique can b
 <span class="lineno">5</span> <span class="c1">// from here onwards, our engine will switch back to the default mnemonic &quot;jne&quot; for JNE.</span></code></pre></div>
 
 <p><br>
-Basically, rather than using a string for the mnemonic, we pass the value <em>NULL</em> in <em>line 2</em> when declaring the <em>cs<em>opt</em>mnem</em> structure.</p>
+Basically, rather than using a string for the mnemonic, we pass the value <em>NULL</em> in <em>line 2</em> when declaring the <em>cs_opt_mnem</em> structure.</p>
 
 <p><br>
 The below Python sample does the same thing to reset the engine, which is self explanatory.</p>
