@@ -275,11 +275,11 @@ The code looks a bit complicated, but actually pretty simple:</p>
 
 <ul>
 <li><p>Line 12: Check if this instruction has any operands to print out.</p></li>
-<li><p>Line 17 ~ 18: If this operand is register (reflected by type <em>ARM64<em>OP</em>REG</em>), then print out its register name.</p></li>
-<li><p>Line 19 ~ 20: If this operand is immediate (reflected by type <em>ARM64<em>OP</em>IMM</em>), then print out its numerical value.</p></li>
-<li><p>Line 21 ~ 22: If this operand is of type C-IMM (coprocessor register type, reflected by <em>ARM64<em>OP</em>CIMM</em>), then print out its index value.</p></li>
-<li><p>Line 23 ~ 24: If this operand is real number (reflected by type <em>ARM64<em>OP</em>FP</em>), then print out its numerical value.</p></li>
-<li><p>Line 25 ~ 35: If this operand is memory reference  (reflected by type <em>ARM64<em>OP</em>MEM</em>), then print out its base/index registers, together with offset value.</p></li>
+<li><p>Line 17 ~ 18: If this operand is register (reflected by type <em>ARM64_OP_REG</em>), then print out its register name.</p></li>
+<li><p>Line 19 ~ 20: If this operand is immediate (reflected by type <em>ARM64_OP_IMM</em>), then print out its numerical value.</p></li>
+<li><p>Line 21 ~ 22: If this operand is of type C-IMM (coprocessor register type, reflected by <em>ARM64_OP_CIMM</em>), then print out its index value.</p></li>
+<li><p>Line 23 ~ 24: If this operand is real number (reflected by type <em>ARM64_OP_FP</em>), then print out its numerical value.</p></li>
+<li><p>Line 25 ~ 35: If this operand is memory reference  (reflected by type <em>ARM64_OP_MEM</em>), then print out its base/index registers, together with offset value.</p></li>
 <li><p>Line 37 ~ 42: If this operand uses shift or extender, print out their value.</p></li>
 <li><p>Line 44 ~ 45: If this instruction writes back its value afterwards, print out that.</p></li>
 <li><p>Line 46 ~ 47: Print out the code condition of this instruction.</p></li>

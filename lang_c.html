@@ -228,7 +228,7 @@ Readers might already figure out how the code above work, as it is simple enough
 <li><p>Line 7: In this example, we only care about some instructions, which is either <em>bl</em> or <em>cmp</em>, and ignore everything else. All the constant numbers can be found in file <strong>arm.h</strong> in the same directory of the header file <em>capstone.h</em>.</p></li>
 <li><p>Line 13: Type-cast detail information (of data type <strong>cs_detail</strong>) to a variable named <em>detail</em> for brevity.</p></li>
 <li><p>Line 14: Check if this instruction <em>implicitly</em> reads any registers. If so, next block prints out all these register names.</p></li>
-<li><p>Line 17: While we can simply print out the register ID (which has data type <em>int</em>), it is more friendly to print out its register name instead. This can be done with the API <strong>cs<em>reg</em>name()</strong>, which accepts the register ID as its 2nd argument.</p></li>
+<li><p>Line 17: While we can simply print out the register ID (which has data type <em>int</em>), it is more friendly to print out its register name instead. This can be done with the API <strong>cs_reg_name()</strong>, which accepts the register ID as its 2nd argument.</p></li>
 <li><p>Line 22 ~ 26: Check if this instruction belongs to any semantic group. If so, print out all group ID. Similarly, we can find all the group ID in the header file <em>arm.h</em>.</p></li>
 </ul>
 
@@ -302,11 +302,11 @@ The code looks a bit complicated, but actually pretty simple:</p>
 <ul>
 <li><p>Line 2: Assume we already have a pointer to cs_insn structure. This line casts the details to a variable named <em>detail</em> for simplicity.</p></li>
 <li><p>Line 3: Check if this instruction has any operands to print out.</p></li>
-<li><p>Line 9 ~ 11: If this operand is register (reflected by type <em>ARM64<em>OP</em>REG</em>), then print out its register name with the API <strong>cs<em>reg</em>name()</strong>.</p></li>
-<li><p>Line 12 ~ 14: If this operand is immediate (reflected by type <em>ARM64<em>OP</em>IMM</em>), then print out its numerical value.</p></li>
-<li><p>Line 15 ~ 17: If this operand is real number (reflected by type <em>ARM64<em>OP</em>FP</em>), then print out its numerical value.</p></li>
-<li><p>Line 18 ~ 26: If this operand is memory reference  (reflected by type <em>ARM64<em>OP</em>MEM</em>), then print out its base/index registers, together with offset value.</p></li>
-<li><p>Line 27 ~ 29: If this operand is of type C-IMM (coprocessor register type, reflected by <em>ARM64<em>OP</em>CIMM</em>), then print out its index value.</p></li>
+<li><p>Line 9 ~ 11: If this operand is register (reflected by type <em>ARM64_OP_REG</em>), then print out its register name with the API <strong>cs_reg_name()</strong>.</p></li>
+<li><p>Line 12 ~ 14: If this operand is immediate (reflected by type <em>ARM64_OP_IMM</em>), then print out its numerical value.</p></li>
+<li><p>Line 15 ~ 17: If this operand is real number (reflected by type <em>ARM64_OP_FP</em>), then print out its numerical value.</p></li>
+<li><p>Line 18 ~ 26: If this operand is memory reference  (reflected by type <em>ARM64_OP_MEM</em>), then print out its base/index registers, together with offset value.</p></li>
+<li><p>Line 27 ~ 29: If this operand is of type C-IMM (coprocessor register type, reflected by <em>ARM64_OP_CIMM</em>), then print out its index value.</p></li>
 <li><p>Line 32 ~ 36: If this operand uses shift or extender, print out their value.</p></li>
 <li><p>Line 39 ~ 40: Print out the code condition of this instruction if relevant.</p></li>
 <li><p>Line 42 ~ 43: If this instruction update flags, print out that.</p></li>
@@ -341,11 +341,11 @@ The output of the above sample is like below.</p>
 
 <h3>5. Run-time options</h3>
 
-<p>Besides the <em>CS<em>OPT</em>DETAIL</em> option previously introduced, Capstone can customize the engine at run-time, allowing us to set the assembly syntax or dynamically change engine&#39;s mode with the same API <em>cs_option()</em>.</p>
+<p>Besides the <em>CS_OPT_DETAIL</em> option previously introduced, Capstone can customize the engine at run-time, allowing us to set the assembly syntax or dynamically change engine&#39;s mode with the same API <em>cs_option()</em>.</p>
 
 <h4>5.1 Syntax option</h4>
 
-<p>By default, X86 assembly outputs in Intel syntax. To switch to AT&amp;T syntax instead, we can simply set syntax option using the option <strong>CS<em>OPT</em>SYNTAX</strong> with <em>cs_option()</em> like below.</p>
+<p>By default, X86 assembly outputs in Intel syntax. To switch to AT&amp;T syntax instead, we can simply set syntax option using the option <strong>CS_OPT_SYNTAX</strong> with <em>cs_option()</em> like below.</p>
 
 <div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">csh</span> <span class="n">handle</span><span class="p">;</span>
 
@@ -359,11 +359,11 @@ In case we want to return to Intel syntax, we can reset the syntax in the simila
 
 <h4>5.2 Dynamically change disassemble mode at run-time</h4>
 
-<p>From version 2.0, we can dynamically change the engine&#39;s mode with <em>cs_open()</em> at run-time thanks to a new option <strong>CS<em>OPT</em>MODE</strong>.</p>
+<p>From version 2.0, we can dynamically change the engine&#39;s mode with <em>cs_open()</em> at run-time thanks to a new option <strong>CS_OPT_MODE</strong>.</p>
 
 <p>This is useful for example with Arm, where we might frequently switch between Arm &amp; Thumb modes without having to create a new engine. This also happens with X86, where we might want to switch back and forth between protected-mode &amp; real-mode code.</p>
 
-<p>Below sample shows how <em>CS<em>OPT</em>MODE</em> can be used to switch back and forth between Arm &amp; Thumb modes at run-time.</p>
+<p>Below sample shows how <em>CS_OPT_MODE</em> can be used to switch back and forth between Arm &amp; Thumb modes at run-time.</p>
 
 <div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">cs_open</span><span class="p">(</span><span class="n">CS_ARCH_ARM</span><span class="p">,</span> <span class="n">CS_MODE_ARM</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">handle</span><span class="p">);</span>
 <span class="c1">// from now on disassemble Arm code ....</span>
