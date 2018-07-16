@@ -308,13 +308,14 @@ footer {
   box-shadow: 0px 0px 8px #ffff66;
 }
 
-table {
-   border: 1px solid black; padding:10px;
+.tablelines table, .tablelines td {
+	border: 1px solid black;
+	padding: 10px;
 }
 
-th {
-    background-color: #666666;
-    color: white;
+.tablelines th {
+ 	background-color: #666666;
+	color: white;
 	padding: 15px;
 }
 

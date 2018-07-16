@@ -35,7 +35,8 @@ If we only [build selected architectures](compile.html), the engine is even smal
 | Mips | libcapstone.a<br>libcapstone.dylib | 206 KB<br>164 KB | 136 KB<br>95 KB | 34%<br>43% |
 | PowerPC | libcapstone.a<br>libcapstone.dylib | 140 KB<br>103 KB | 69 KB<br>50 KB | 51%<br>52% |
 | X86 | libcapstone.a<br>libcapstone.dylib | 809 KB<br>728 KB | 486 KB<br>452 KB | 40%<br>38% |
-| Combine all 5 archs | libcapstone.a<br>libcapstone.dylib | 2.3 MB<br>1.9 MB | 1.6 MB<br>1.3 MB | 31%<br>32% |
+| Combine all archs | libcapstone.a<br>libcapstone.dylib | 2.3 MB<br>1.9 MB | 1.6 MB<br>1.3 MB | 31%<br>32% |
+{: .tablelines}
 
 <br>
 (Above statistics were collected as of version *2.1-RC1*, built on Mac OSX 10.9.1 with clang-500.2.79)
@@ -53,6 +54,7 @@ To significantly reduce the engine size, some internal data has to be sacrificed
 | @detail->regs_read<br>@detail->regs_read_count | Registers implicitly read by instruction | No |
 | @detail->regs_write<br>@detail->regs_write_count | Registers implicitly written by instruction | No |
 | @detail->groups<br>@detail->groups_count | Semantic groups instruction belong to | No |
+{: .tablelines}
 
 <br>
 While these information is missing, fortunately we can still work out some critical information with the remaining data fields of *cs_insn* struct.

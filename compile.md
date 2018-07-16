@@ -41,7 +41,8 @@ Find below the libraries' size for each individual architecture.
 | Mips | libcapstone.a<br>libcapstone.dylib | 206 KB<br>164 KB |
 | PowerPC | libcapstone.a<br>libcapstone.dylib | 140 KB<br>103 KB |
 | X86 | libcapstone.a<br>libcapstone.dylib | 809 KB<br>728 KB |
-| Combine all 5 archs | libcapstone.a<br>libcapstone.dylib | 2.3 MB<br>1.9 MB |
+| Combine all | libcapstone.a<br>libcapstone.dylib | 2.3 MB<br>1.9 MB |
+{: .tablelines}
 
 <br>
 (Above statistics were collected as of version *2.1-rc1*, built on Mac OSX 10.9.1 with clang-500.2.79)
