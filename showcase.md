@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **392** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **393** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -793,6 +793,8 @@ In our knowledge, Capstone has been used by **392** following products (listed i
 - [PinCFGReconstructor](https://github.com/andreatulimiero/PinCFGReconstructor): Instruction tracing for complext programs.
 
 - [dc-lang](https://github.com/patrykstefanski/dc-lang): A toy programming language + tracing JIT.
+
+- [Golf](https://github.com/pspace/golf): Parser for ELF file written in Golang.
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
