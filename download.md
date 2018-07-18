@@ -73,7 +73,7 @@ Besides PowerShell, Python, Java & Ocaml get supported in the main code, some bi
 
 ### Windows - Core engine <img src="img/windows.png" height="28" width="28">
 
-<a class="download" href="https://capstone-engine.github.io/download/{{ post.title }}/capstone-{{ post.title }}-win32.zip" title="Download Win32 Binaries (ZIP)">Win-32</a>
+<a class="download" href="https://github.com/aquynh/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-win32.zip" title="Download Win32 Binaries (ZIP)">Win-32</a>
 
 NOTE: This is necessary for all bindings (except Python) & also for C programming.
 
@@ -84,19 +84,19 @@ This package contains:
 - 32-bit/64-bit DLLs & static libraries for Microsoft Windows 32-bit/64-bit.
 - cstool (cstool.exe)
 
-<a class="download" href="https://capstone-engine.github.io/download/{{ post.title }}/capstone-{{ post.title }}-win64.zip" title="Download Win64 Binaries (ZIP)">Win-64</a>
+<a class="download" href="https://github.com/aquynh/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-win64.zip" title="Download Win64 Binaries (ZIP)">Win-64</a>
 
 ---
 
 ### Python module for Windows - Binaries <img src="img/python.png" height="28" width="28"> <img src="img/windows.png" height="28" width="28">
 
-<a class="download" href="https://github.com/aquynh/capstone/releases/download/3.0.5-rc2/capstone-3.0.5-rc2-python-win32.msi" title="Download Python module for Python, Win32">Python-32</a>
+<a class="download" href="https://github.com/aquynh/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-python-win32.msi" title="Download Python module for Python, Win32">Python-32</a>
 
 NOTE: since this installer is self-contain, no need to install the core engine above.
 
 This will install Capstone module into your corresponding Python edition.
 
-<a class="download" href="https://github.com/aquynh/capstone/releases/download/3.0.5-rc2/capstone-3.0.5-rc2-python-win64.msi" title="Download Python module for Python, Win64">Python-64</a>
+<a class="download" href="https://github.com/aquynh/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-python-win64.msi" title="Download Python module for Python, Win64">Python-64</a>
 
 ---
 
