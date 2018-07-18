@@ -62,6 +62,8 @@ Below is all the *Capstone supporters* who generously made donation (listed in n
 
 - Alexey Volodin
 
+- [CMC Infosec](https://www6.cmcinfosec.com)
+
 - [Antonin Beaujeant](https://twitter.com/beaujeant)
 
 - [@acidphreak](https://twitter.com/acidphreak)
