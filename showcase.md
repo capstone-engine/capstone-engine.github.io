@@ -5,14 +5,13 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **398** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **399** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
 - [Keystone](http://www.keystone-engine.org): Lightweight multi-arch, multi-platform assembler framework.
 
-- [CEnigma](http://www.cenigma.org): Web-based disassembler tool that is
-  simple, easy, fast & user-friendly. (*inactive now*)
+- [CEnigma](http://www.cenigma.org): Web-based disassembler tool that is simple, easy, fast & user-friendly. (*inactive now*)
 
 - [CEbot](bot.html): A Twitter bot for binary-reversing right from Twitter account. (*inactive now*)
 
@@ -805,6 +804,8 @@ In our knowledge, Capstone has been used by **398** following products (listed i
 - [REBot](https://github.com/Cryptogenic/REBot): A Discord bot for reverse engineers and exploit developers.
 
 - [Delf](https://github.com/bloodstalker/delf): An ELF dump script written in Python.
+
+- [One gadget lib](https://github.com/szk3y/one-gadget-lib): Python library to find one-gadget to invoke "/bin/sh".
 
 
 <br>
