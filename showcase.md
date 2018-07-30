@@ -784,7 +784,7 @@ In our knowledge, Capstone has been used by **398** following products (listed i
 
 - [ida-embed-arch-disasm](https://github.com/a1ext/ida-embed-arch-disasm): Allows IDA PRO to disassemble x86-64 code (WOW64) in 32-bit database.
 
-- [YaraGenerator](https://github.com/hy00un/YaraGenerator): Automatic Yara rule tool.
+- [Hyara](https://github.com/hy00un/Hyara): Yara rule making tool (IDA plugin).
 
 - [SMDA](https://github.com/danielplohmann/smda): Minimalist recursive disassembler library optimized for accurate CFG recovery from memory dumps.
 
