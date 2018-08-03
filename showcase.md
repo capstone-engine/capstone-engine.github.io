@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **399** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **400** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -806,6 +806,8 @@ In our knowledge, Capstone has been used by **399** following products (listed i
 - [Delf](https://github.com/bloodstalker/delf): An ELF dump script written in Python.
 
 - [One gadget lib](https://github.com/szk3y/one-gadget-lib): Python library to find one-gadget to invoke "/bin/sh".
+
+- [vtMal](https://github.com/aaaddress1/vtMal): Malware Sandbox Emulation in Python @ HITCON 2018.
 
 
 <br>
