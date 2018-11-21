@@ -19,7 +19,7 @@ Our target is to make Capstone the ultimate disassembly engine for binary analys
 
 - Provide some semantics of the disassembled instruction, such as list of implicit registers read & written.
 
-- Implemented in pure C language, with bindings for *Clojure*, *F#*, *Common Lisp*, *Visual Basic*, *PHP*, *PowerShell*, *Haskell*, *Perl*, *Python*, *Ruby*, *C#*, *NodeJS*, *Java*, *GO*, *C++*, *OCaml*, *Lua*, *Rust*, *Delphi*, *Free Pascal* & *Vala* available.
+- Implemented in pure C language, with bindings for *D*, *Clojure*, *F#*, *Common Lisp*, *Visual Basic*, *PHP*, *PowerShell*, *Haskell*, *Perl*, *Python*, *Ruby*, *C#*, *NodeJS*, *Java*, *GO*, *C++*, *OCaml*, *Lua*, *Rust*, *Delphi*, *Free Pascal* & *Vala* available.
 
 - Native support for *Windows* & \*nix (with *Mac OSX*, *iOS*, *Android*, *Linux*, \*BSD & *Solaris* confirmed).
 
