@@ -75,3 +75,5 @@ Below is all the *Capstone supporters* who generously made donation (listed in n
 - [Shawn "citypw" C](https://twitter.com/citypw)
 
 - [Catena Cyber](https://catenacyber.fr)
+
+- [Thinkst Canary](https://canary.tools)
