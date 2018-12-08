@@ -77,3 +77,5 @@ Below is all the *Capstone supporters* who generously made donation (listed in n
 - [Catena Cyber](https://catenacyber.fr)
 
 - [Thinkst Canary](https://canary.tools)
+
+- [Now Secure](https://www.nowsecure.com)
