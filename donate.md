@@ -78,4 +78,4 @@ Below is all the *Capstone supporters* who generously made donation (listed in n
 
 - [Thinkst Canary](https://canary.tools)
 
-- [Now Secure](https://www.nowsecure.com)
+- [NowSecure](https://www.nowsecure.com)
