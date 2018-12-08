@@ -10,11 +10,9 @@ Are you already using Capstone engine? Yes, if you are using any products in our
 
 Please consider donating to help us improve Capstone!
 
-You can either donate via *Paypal* or send us *Bitcoins*.
+You can either donate via *Paypal*:
 
 - Paypal email: <font color="blue">capstone.engine@gmail.com</font>
-
-- Bitcoin: <font color="#E65C00">1fGz2GYSjiJxUoACpsHXcGmaAhbEDTuWi</font> ([link](bitcoin:1fGz2GYSjiJxUoACpsHXcGmaAhbEDTuWi?message=donation))
 
 <br>
 Please [let us know](contact.html) if you want to be listed as *Capstone supporter*.
