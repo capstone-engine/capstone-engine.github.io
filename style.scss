@@ -271,14 +271,19 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 30px;
+  margin-top: 0px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: #f0f0f0;
+}
+
+sponsor {
+  padding: 12px 0;
+  text-align: center;
 }
 
 footer {
-  padding: 10px 0;
+  padding: 6px 0;
   text-align: center;
 }
 
