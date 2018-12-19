@@ -88,5 +88,23 @@ This package contains:
 
 ---
 
+### Python module for Windows/MacOS/Linux - Binaries <img src="img/python.png" height="28" width="28"> <img src="img/windows.png" height="28" width="28">
+
+With `pip`, you can easily install Python module for either Windows, MacOS or Linux.
+
+```
+pip install capstone
+```
+
+In case you wish to upgrade from older version of Capstone, do:
+
+```
+pip install capstone --upgrade
+```
+
+Remember to stick `sudo` for root privilege in front if needed.
+
+---
+
 {% endfor %}
 
