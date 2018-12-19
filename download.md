@@ -100,7 +100,5 @@ In case you wish to upgrade from older version of Capstone, do:
 
 Remember to stick "sudo" in front for root privilege if needed.
 
----
-
 {% endfor %}
 
