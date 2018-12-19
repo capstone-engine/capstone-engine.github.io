@@ -66,7 +66,8 @@ Besides PowerShell, Python, Java & Ocaml get supported in the main code, some bi
 - [PHP-capstone](https://github.com/firodj/php-capstone): PHP binding (by Fadhil Mandaga).
 - [Common Lisp](https://github.com/jingtaozf/capstone): Common Lisp binding (by Jingtao Xu).
 - [Capstone.FSharp](https://github.com/cagyirey/Capstone.FSharp): F# binding (by Cagyirey).
-- [Capstone-Clj](https://github.com/williballenthin/reversing-clj/tree/master/capstone-clj) Clojure binding (by Willi Ballenthin).
+- [Capstone-Clj](https://github.com/williballenthin/reversing-clj/tree/master/capstone-clj): Clojure binding (by Willi Ballenthin).
+- [capstone-d](https://github.com/bohlender/capstone-d): D binding (by Dimitri Bohlender).
 - [C# binding](https://github.com/mattifestation/capstone) (by Matt Graeber) (*Note: this is only for the older version Capstone 2.0*).
 
 ---
