@@ -92,17 +92,13 @@ This package contains:
 
 With `pip`, you can easily install Python module for either Windows, MacOS or Linux.
 
-```
-pip install capstone
-```
+    pip install capstone
 
 In case you wish to upgrade from older version of Capstone, do:
 
-```
-pip install capstone --upgrade
-```
+    pip install capstone --upgrade
 
-Remember to stick `sudo` for root privilege in front if needed.
+Remember to stick "sudo" in front for root privilege if needed.
 
 ---
 
