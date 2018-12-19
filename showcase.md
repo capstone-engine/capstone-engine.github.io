@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **402** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **404** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -812,6 +812,10 @@ In our knowledge, Capstone has been used by **402** following products (listed i
 - [Rosenbridge](https://github.com/xoreaxeaxeax/rosenbridge): Hardware backdoors in x86 CPUs.
 
 - [EnVisen](https://analyze.polyverse.io): ROP Entropy Visualizer.
+
+- [Nemu](https://github.com/intel/nemu): Modern Hypervisor for the Cloud.
+
+- [Android-Disassembler](https://github.com/KYHSGeekCode/Android-Disassembler): Disassembler for Android.
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
