@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **404** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **417** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -816,6 +816,33 @@ In our knowledge, Capstone has been used by **404** following products (listed i
 - [Nemu](https://github.com/intel/nemu): Modern Hypervisor for the Cloud.
 
 - [Android-Disassembler](https://github.com/KYHSGeekCode/Android-Disassembler): Disassembler for Android.
+
+- [Google CTF](https://github.com/google/google-ctf): Google CTF.
+
+- [LinDbg](https://github.com/shareef12/lindbg): Linux clone of Windbg.
+
+- [libcpu](https://github.com/S2E/libcpu): x86 Dynamic Binary Translator Library.
+
+- [Dwarf](https://github.com/iGio90/Dwarf): GUI for Android revere engineering.
+
+- [Stonework](https://github.com/zydeco/stonework): Pebble emulator iOS and watchOS.
+
+- [VmwareHardenedLoader](https://github.com/hzqst/VmwareHardenedLoader): Anti anti-VM for VMWare.
+
+- [libelfmaster](https://github.com/elfmaster/libelfmaster): Secure ELF parsing/loading library for forensics reconstruction of malware, and robust reverse engineering tools.
+
+- [arme](https://github.com/pent0/arme): ARM2ARM recompiler for melonds.
+
+- [Lojax UEFI rootkit checker](https://github.com/evgind/lojax_uefi_rootkit_checker): test if your system is vulnerable to world's first UEFI rootkit attack.
+
+- [Twopy](https://github.com/jpages/twopy): A Python JIT compiler.
+
+- [Boomerang](https://github.com/BoomerangDecompiler/boomerang): Boomerang Decompiler.
+
+- [GTIRB pprinter](https://github.com/GrammaTech/gtirb-pprinter): Pretty printer from GTIRB to assembly code.
+
+- [InspectELF](https://github.com/bit65/inspectelf): ELF Inspection library finding compile-time gcc security switches.
+
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
