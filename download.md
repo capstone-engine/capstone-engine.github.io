@@ -107,9 +107,9 @@ Remember to stick "sudo" in front for root privilege if needed.
 
 ---
 
-### Brew package for MacOS - Binaries <img src="img/homebrew.png" height="28" width="28">
+### Brew package for MacOS - Binaries <img src="img/homebrew.png" height="28" width="28"> <img src="img/osx.png" height="28" width="28">
 
-Install Capstone from Brew on MacOS with:
+Install Brew package of Capstone on MacOS with:
 
 {% highlight bash %}
 brew install capstone
