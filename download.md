@@ -105,5 +105,22 @@ pip install capstone --upgrade
 
 Remember to stick "sudo" in front for root privilege if needed.
 
+---
+
+### Brew package for MacOS - Binaries <img src="img/homebrew.png" height="28" width="28">
+
+Install Capstone from Brew on MacOS with:
+
+{% highlight bash %}
+brew install capstone
+{% endhighlight %}
+
+In case you wish to upgrade from older version of Capstone, do:
+
+{% highlight bash %}
+brew update
+brew upgrade capstone
+{% endhighlight %}
+
 {% endfor %}
 
