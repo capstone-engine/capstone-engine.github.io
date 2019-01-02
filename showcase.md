@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **417** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **418** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -843,6 +843,7 @@ In our knowledge, Capstone has been used by **417** following products (listed i
 
 - [InspectELF](https://github.com/bit65/inspectelf): ELF Inspection library finding compile-time gcc security switches.
 
+- [Unicorn PE](https://github.com/hzqst/unicorn_pe): Unicorn based emulator for Windows PE files.
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
