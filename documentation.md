@@ -5,7 +5,7 @@ title: Documentation
 
 ## Compile & install Capstone
 
-There are several methods to compile and install Capstone.
+There are several methods to compile and install Capstone. You can view a detailed tutorial for windows and linux [here](http://s4.ce.sharif.edu/blog/2019/01/17/capstone/).
 
 ### 1. From source code
 
