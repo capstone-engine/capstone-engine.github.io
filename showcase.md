@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **420** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **421** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -849,6 +849,7 @@ In our knowledge, Capstone has been used by **420** following products (listed i
 
 - [TaintGrind](https://github.com/wmkhoo/taintgrind): A taint-tracking plugin for the Valgrind memory checking tool.
 
+- [Binsequencer](https://github.com/karttoon/binsequencer): A script designed to find a common pattern of bytes within a set of samples and generate a YARA rule.
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
