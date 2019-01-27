@@ -47,8 +47,6 @@ In our knowledge, Capstone has been used by **421** following products (listed i
 
 - [Snowman](https://github.com/yegord/snowman): A native code to C/C++ decompiler.
 
-- [x64dbg](http://x64dbg.com): An open-source x64/x32 debugger for Windows.
-
 - [Concolica](https://github.com/c01db33f/concolica): Python concolic execution framework for program analysis.
 
 - [Memtools Vita](https://github.com/BrianBTB/memtools_vita): Toolkit to explore PlayStation Vita firmware.
@@ -338,8 +336,6 @@ In our knowledge, Capstone has been used by **421** following products (listed i
 - [WTFJH](https://github.com/Naville/WTFJH): iOS Security Runtime Inspection.
 
 - [Xenpwn](https://github.com/felixwilhelm/xenpwn): A toolkit for memory access tracing using hardware-assisted virtualization.
-
-- [Resonance](https://github.com/krystalgamer/Resonance): A C polymorphic and metamorphic engine.
 
 - [Rebours](https://github.com/trtikm/Rebours): A framework for control-flow recovery in binary programs.
 
@@ -887,6 +883,10 @@ In addition, Capstone is available in the following Operating System distributio
 - [Void Linux](http://www.voidlinux.eu): A Linux distro based on the xbps packaging system.
 
 - [REMnux](https://remnux.org): A Linux Toolkit for Reverse-Engineering and Analyzing Malware.
+
+- [Xendbg](https://github.com/nccgroup/xendbg): A feature-complete reference implementation of a modern Xen VMI debugger.
+
+- [Mupen64Plus](http://www.mupen64plus.org): A cross-platform plugin-based N64 emulator.
 
 ---
 
