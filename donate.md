@@ -77,3 +77,14 @@ Below is all the *Capstone supporters* who generously made donation (listed in n
 - [Thinkst Canary](https://canary.tools)
 
 - [NowSecure](https://www.nowsecure.com)
+
+- [VSec](https://www.vsec.com.vn/en/)
+
+- [Verichains](https://www.verichains.io)
+
+- [Senrio](https://senrio.com)
+
+- [Catena Cyber](https://catenacyber.fr)
+
+- [Hardened Linux](https://github.com/hardenedlinux)
+
