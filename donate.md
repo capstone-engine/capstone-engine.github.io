@@ -78,6 +78,10 @@ Below is all the *Capstone supporters* who generously made donation (listed in n
 
 - [NowSecure](https://www.nowsecure.com)
 
+- [ECQ](https://e-cq.net)
+
+- [GracefulBits](https://gracefulbits.com/)
+
 - [VSec](https://www.vsec.com.vn/en/)
 
 - [Verichains](https://www.verichains.io)
