@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **422** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **424** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -848,6 +848,10 @@ In our knowledge, Capstone has been used by **422** following products (listed i
 - [Binsequencer](https://github.com/karttoon/binsequencer): A script designed to find a common pattern of bytes within a set of samples and generate a YARA rule.
 
 - [Vmware Hardened Loader](https://github.com/hzqst/VmwareHardenedLoader): Vmware Hardened VM detection mitigation loader (anti anti-vm).
+
+- [Janus](https://github.com/JanusDBM/Janus): Binary modifier.
+
+- [crash-unscrambler](https://github.com/gparker42/crash-unscrambler): Analyzes crash reports and crashed processes to recover as much information as possible about the data and execution leading up to the crash.
 
 
 <br>
