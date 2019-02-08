@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **424** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **425** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -852,6 +852,8 @@ In our knowledge, Capstone has been used by **424** following products (listed i
 - [Janus](https://github.com/JanusDBM/Janus): Binary modifier.
 
 - [crash-unscrambler](https://github.com/gparker42/crash-unscrambler): Analyzes crash reports and crashed processes to recover as much information as possible about the data and execution leading up to the crash.
+
+- [idenLib](https://github.com/secrary/IDA-scripts/tree/master/idenLib): Library Function Identification plugin for IDA Pro.
 
 
 <br>
