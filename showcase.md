@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **426** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **427** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -856,6 +856,8 @@ In our knowledge, Capstone has been used by **426** following products (listed i
 - [idenLib](https://github.com/secrary/IDA-scripts/tree/master/idenLib): Library Function Identification plugin for IDA Pro.
 
 - [Rainbow](https://github.com/Ledger-Donjon/rainbow): Easy scripting interface to emulate embedded binaries for tracing.
+
+- [Binarydroid](https://github.com/mipek/binarydroid): Basic disassembler for Android.
 
 
 <br>
