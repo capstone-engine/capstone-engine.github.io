@@ -11,7 +11,7 @@ Our target is to make Capstone the ultimate disassembly engine for binary analys
 
 ### Highlight features
 
-- Multi-architectures: *Arm*, *Arm64* (*Armv8*), *Ethereum Virtual Machine*, *M68K*, *M680X*, *Mips*, *MOS65XX*, *PowerPC*, *Sparc*, *SystemZ*, *TMS320C64X*, *Web Assembly*, *XCore* & *X86* (include *X86_64*) ([details](arch.html)).
+- Multi-architectures: *Arm*, *Arm64* (*Armv8*), *BPF*, *Ethereum Virtual Machine*, *M68K*, *M680X*, *Mips*, *MOS65XX*, *PowerPC*, *Sparc*, *SystemZ*, *TMS320C64X*, *Web Assembly*, *XCore* & *X86* (include *X86_64*) ([details](arch.html)).
 
 - Clean/simple/lightweight/intuitive architecture-neutral API.
 
