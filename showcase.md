@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **429** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **430** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -862,6 +862,8 @@ In our knowledge, Capstone has been used by **429** following products (listed i
 - [GTIRB pprinter](https://github.com/GrammaTech/gtirb-pprinter): Pretty printer from GTIRB to assembly code.
 
 - [Saferwall](https://github.com/saferwall/saferwall): A hackable malware sandbox for the 21st Century.
+
+- [Yara signator](https://github.com/fxb-cocacoding/yara-signator): Automatic YARA rule generation for Malpedia.
 
 
 <br>
