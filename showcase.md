@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **430** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **432** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -864,6 +864,10 @@ In our knowledge, Capstone has been used by **430** following products (listed i
 - [Saferwall](https://github.com/saferwall/saferwall): A hackable malware sandbox for the 21st Century.
 
 - [Yara signator](https://github.com/fxb-cocacoding/yara-signator): Automatic YARA rule generation for Malpedia.
+
+- [Droidguard-VM](https://github.com/amankevich/droidguard-vm): Java implementation of DroidGuard virtual machine.
+
+- [Zephyrus](https://github.com/Iciclez/Zephyrus): A sophisticated memory library used to dynamically hook and edit memory, allowing pre-compiled code to be rewritten.
 
 
 <br>
