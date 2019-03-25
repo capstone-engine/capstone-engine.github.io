@@ -701,8 +701,6 @@ In our knowledge, Capstone has been used by **432** following products (listed i
 
 - [CAFA](https://github.com/long12long/CAFA): Checksum-Aware Fuzzing Assistant for More Coverage.
 
-- [Makin](https://github.com/secrary/makin): Reveal anti-debug tricks.
-
 - [Retdec](https://github.com/avast-tl/retdec): Retargetable machine-code decompiler based on LLVM.
 
 - [Capstone2LLVMIR](https://github.com/avast-tl/capstone2llvmir): Library for Capstone instruction to LLVM IR translation.
@@ -868,6 +866,8 @@ In our knowledge, Capstone has been used by **432** following products (listed i
 - [Droidguard-VM](https://github.com/amankevich/droidguard-vm): Java implementation of DroidGuard virtual machine.
 
 - [Zephyrus](https://github.com/Iciclez/Zephyrus): A sophisticated memory library used to dynamically hook and edit memory, allowing pre-compiled code to be rewritten.
+
+- [xdvre](https://github.com/xdvre/xdvre): A disassembler/debugger that works based on the extension plugin.
 
 
 <br>
