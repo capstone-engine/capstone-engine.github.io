@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **432** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **434** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -868,6 +868,10 @@ In our knowledge, Capstone has been used by **432** following products (listed i
 - [Zephyrus](https://github.com/Iciclez/Zephyrus): A sophisticated memory library used to dynamically hook and edit memory, allowing pre-compiled code to be rewritten.
 
 - [xdvre](https://github.com/xdvre/xdvre): A disassembler/debugger that works based on the extension plugin.
+
+- [elf-mlsploit](https://github.com/jinhojun/elf-mlsploit): Mlsploit module for perturbing ELF binary (direct call to indirect call).
+
+- [Ddisasm](https://github.com/GrammaTech/ddisasm): Datalog driven disassembly of binary executables.
 
 
 <br>
