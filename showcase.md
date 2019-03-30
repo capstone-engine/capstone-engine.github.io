@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **434** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **436** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -872,6 +872,10 @@ In our knowledge, Capstone has been used by **434** following products (listed i
 - [elf-mlsploit](https://github.com/jinhojun/elf-mlsploit): Mlsploit module for perturbing ELF binary (direct call to indirect call).
 
 - [Ddisasm](https://github.com/GrammaTech/ddisasm): Datalog driven disassembly of binary executables.
+
+- [mkYARA](https://github.com/fox-it/mkYARA): Generating YARA rules based on binary code.
+
+- [unprotect](https://github.com/fr0gger/unprotect): A Python tool for parsing PE malware and extract evasion techniques.
 
 
 <br>
