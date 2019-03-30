@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **436** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **437** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -876,6 +876,8 @@ In our knowledge, Capstone has been used by **436** following products (listed i
 - [mkYARA](https://github.com/fox-it/mkYARA): Generating YARA rules based on binary code.
 
 - [unprotect](https://github.com/fr0gger/unprotect): A Python tool for parsing PE malware and extract evasion techniques.
+
+- [DJI firmware tools](https://github.com/o-gs/dji-firmware-tools): Tools for handling firmwares of DJI products, with focus on quadcopters.
 
 
 <br>
