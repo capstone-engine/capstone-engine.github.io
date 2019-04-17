@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **439** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **440** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -882,6 +882,9 @@ In our knowledge, Capstone has been used by **439** following products (listed i
 - [bu6pwn](https://github.com/bu6hunt3r/bu6pwn): PWN Framework.
 
 - [Inspector gadget](https://github.com/Alexandre-Bartel/inspector-gadget): Discovers ROP gadgets & chains them together.
+
+- [Corana](https://github.com/anhvvcs/corana): A Dynamic Symbolic Execution Engine for ARM Cortex-M.
+
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
