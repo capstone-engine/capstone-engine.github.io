@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **441** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **442** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -886,6 +886,9 @@ In our knowledge, Capstone has been used by **441** following products (listed i
 - [Corana](https://github.com/anhvvcs/corana): A Dynamic Symbolic Execution Engine for ARM Cortex-M.
 
 - [uftrace](https://github.com/namhyung/uftrace): Function (graph) tracer for user-space.
+
+- [flara](https://github.com/anagnostouJohn/flara): A web based Yara generator.
+
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
