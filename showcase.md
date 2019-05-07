@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **442** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **444** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -888,6 +888,10 @@ In our knowledge, Capstone has been used by **442** following products (listed i
 - [uftrace](https://github.com/namhyung/uftrace): Function (graph) tracer for user-space.
 
 - [flara](https://github.com/anagnostouJohn/flara): A web based Yara generator.
+
+- [dhop](https://github.com/twd2/dhop): Discover Heap OPeration.
+
+- [DeSW](https://github.com/dustnn/DeSW): Just a simple De-switcher.
 
 
 <br>
