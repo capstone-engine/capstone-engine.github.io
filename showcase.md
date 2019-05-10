@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **444** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **446** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -892,6 +892,10 @@ In our knowledge, Capstone has been used by **444** following products (listed i
 - [dhop](https://github.com/twd2/dhop): Discover Heap OPeration.
 
 - [DeSW](https://github.com/dustnn/DeSW): Just a simple De-switcher.
+
+- [Ensemble DL Ransomware Detector](https://github.com/laurencejbelliott/Ensemble_DL_Ransomware_Detector): A Deep Learning ensemble that classifies Windows executable files as either benign, ransomware, or other malware.
+
+- [RansomwareDetector](https://github.com/aaron-otis/RansomwareDetector): Attempts to detect ransomware based on properties of of a binary.
 
 
 <br>
