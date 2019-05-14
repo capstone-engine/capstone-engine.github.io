@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **448** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **449** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -900,6 +900,9 @@ In our knowledge, Capstone has been used by **448** following products (listed i
 - [RopDissector](https://github.com/season-lab/ropdissector): A framework for static analysis of ROP exploits and programs.
 
 - [TriggerBug](https://github.com/notify-bibi/TriggerBug): Fast-Symbolic-Emulation-Engine.
+
+- [Delinker](https://github.com/jnider/delinker): Unlinks a binary executable to get back a set of .o object files for further transformation and re-linking.
+
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
