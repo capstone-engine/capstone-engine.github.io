@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **449** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **450** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -902,6 +902,8 @@ In our knowledge, Capstone has been used by **449** following products (listed i
 - [TriggerBug](https://github.com/notify-bibi/TriggerBug): Fast-Symbolic-Emulation-Engine.
 
 - [Delinker](https://github.com/jnider/delinker): Unlinks a binary executable to get back a set of .o object files for further transformation and re-linking.
+
+- [YaraSafe](https://github.com/lucamassarelli/yarasafe): SAFE embeddings to match functions in Yara.
 
 
 <br>
