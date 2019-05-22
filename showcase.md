@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **451** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **452** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -906,6 +906,8 @@ In our knowledge, Capstone has been used by **451** following products (listed i
 - [YaraSafe](https://github.com/lucamassarelli/yarasafe): SAFE embeddings to match functions in Yara.
 
 - [Patcher](https://github.com/BradDorney/Patcher): Lightweight library to facilitate creating & tracking function hooks or other arbitrary memory patches.
+
+- [CARE](https://github.com/kandycs/CARE): Compiler-Assisted Recovery mechanism for soft failures, which are caused by transient faults.
 
 
 <br>
