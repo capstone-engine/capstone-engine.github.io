@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **453** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **455** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -910,6 +910,10 @@ In our knowledge, Capstone has been used by **453** following products (listed i
 - [CARE](https://github.com/kandycs/CARE): Compiler-Assisted Recovery mechanism for soft failures, which are caused by transient faults.
 
 - [CRNN-malware-detector](https://github.com/horo90/CRNN-malware-detector): Convolutional Recurrent Neural Net based malware detection model.
+
+- [Razzer](https://github.com/compsec-snu/razzer): A Kernel fuzzer focusing on race bugs.
+
+- [Execution trace viewer](https://github.com/teemu-l/execution-trace-viewer): Tool for viewing and analyzing execution traces.
 
 
 <br>
