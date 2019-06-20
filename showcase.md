@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **456** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **458** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -916,6 +916,10 @@ In our knowledge, Capstone has been used by **456** following products (listed i
 - [Execution trace viewer](https://github.com/teemu-l/execution-trace-viewer): Tool for viewing and analyzing execution traces.
 
 - [Zofi](https://github.com/vporpo/zofi): The Zero Overhead Fault Injector project.
+
+- [elf-dissector](https://github.com/KDE/elf-dissector): Tools for inspecting, analyzing and optimizing ELF files.
+
+- [RetroWrite](https://github.com/HexHive/retrowrite): Retrofitting compiler passes though binary rewriting.
 
 
 <br>
