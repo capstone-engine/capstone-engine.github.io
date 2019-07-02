@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **459** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **460** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -922,6 +922,8 @@ In our knowledge, Capstone has been used by **459** following products (listed i
 - [RetroWrite](https://github.com/HexHive/retrowrite): Retrofitting compiler passes though binary rewriting.
 
 - [TaintInduce](https://taintinduce.github.io): Automate the creation of taint propagation rules for unknown instruction sets.
+
+- [malduck](https://github.com/CERT-Polska/malduck): Malduck is your ducky companion in malware analysis journeys.
 
 
 <br>
