@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **462** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **463** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -928,6 +928,9 @@ In our knowledge, Capstone has been used by **462** following products (listed i
 - [UnicoreFuzz](https://github.com/fgsect/unicorefuzz): Fuzzing the Kernel Using AFL-Unicorn.
 
 - [UniTaint](https://github.com/pgarba/UniTaint): PoC for a taint based attack on VMProtect.
+
+- [macsim](http://comparch.gatech.edu/hparch/macsim.html): A heterogeneous architecture timing model simulator.
+
 
 
 <br>
