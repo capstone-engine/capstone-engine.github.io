@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **460** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **461** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -924,6 +924,9 @@ In our knowledge, Capstone has been used by **460** following products (listed i
 - [TaintInduce](https://taintinduce.github.io): Automate the creation of taint propagation rules for unknown instruction sets.
 
 - [malduck](https://github.com/CERT-Polska/malduck): Malduck is your ducky companion in malware analysis journeys.
+
+- [UnicoreFuzz](https://github.com/fgsect/unicorefuzz): Fuzzing the Kernel Using AFL-Unicorn.
+
 
 
 <br>
