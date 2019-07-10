@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **464** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **465** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -933,6 +933,7 @@ In our knowledge, Capstone has been used by **464** following products (listed i
 
 - [libhooker](https://github.com/smx-smx/libhooker): Modular binary injection framework.
 
+- [disasm.ninja](https://disasm.ninja): A realtime assembler/disassembler.
 
 
 <br>
