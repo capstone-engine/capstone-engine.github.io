@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **466** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **468** following products (listed in no particular order).
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -936,6 +936,10 @@ In our knowledge, Capstone has been used by **466** following products (listed i
 - [disasm.ninja](https://disasm.ninja): A realtime assembler/disassembler.
 
 - [washingtondc](https://github.com/washingtondc-emu/washingtondc): Open-source Sega Dreamcast emulator.
+
+- [Router Exploit Shovel](https://github.com/arthastang/Router-Exploit-Shovel): Automated Application Generation for Stack Overflow Types on Wireless Routers.
+
+- [tbrop](https://github.com/clslgrnc/tbrop): Taint-based ROP tool.
 
 
 <br>
