@@ -5,7 +5,11 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **469** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **472** following products (listed in no particular order).
+
+- [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
+
+- [Qiling](https://github.com/qilingframework): Cross-platform & multi-architecture lightweight sandbox.
 
 - [Unicorn](http://www.unicorn-engine.org): Lightweight multi-arch, multi-platform CPU emulator framework.
 
@@ -943,6 +947,7 @@ In our knowledge, Capstone has been used by **469** following products (listed i
 
 - [mobo](https://github.com/nickwanninger/mobo): Little hypervisor project using KVM.
 
+- [WindowFunctionTracer](https://github.com/VertexToEdge/WindowFunctionTracer): Window Executable file Function tracer using Debugging API.
 
 
 <br>
