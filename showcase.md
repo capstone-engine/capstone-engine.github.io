@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **473** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **474** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -950,6 +950,8 @@ In our knowledge, Capstone has been used by **473** following products (listed i
 - [Window Function Tracer](https://github.com/VertexToEdge/WindowFunctionTracer): Window Executable file Function tracer using Debugging API.
 
 - [VBox Monitor](https://github.com/macmade/vbox-monitor): Monitoring/Debug tool for VirtualBox.
+
+- [Unicorn-Bios](https://github.com/macmade/unicorn-bios): Basic BIOS emulator for Unicorn Engine.
 
 
 <br>
