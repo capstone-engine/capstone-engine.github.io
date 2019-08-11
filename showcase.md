@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **475** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **476** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -955,6 +955,7 @@ In our knowledge, Capstone has been used by **475** following products (listed i
 
 - [yara-sig-generator](https://github.com/vominh2012/yara_sig_generator): Create Yara signature from binary address.
 
+- [Binee](https://github.com/carbonblack/binee): Binary emulation environment.
 
 
 <br>
