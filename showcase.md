@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **476** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **477** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -957,6 +957,10 @@ In our knowledge, Capstone has been used by **476** following products (listed i
 
 - [Binee](https://github.com/carbonblack/binee): Binary emulation environment.
 
+- [Xendbg](https://github.com/nccgroup/xendbg): A feature-complete reference implementation of a modern Xen VMI debugger.
+
+- [Mupen64Plus](http://www.mupen64plus.org): A cross-platform plugin-based N64 emulator.
+
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
@@ -994,10 +998,6 @@ In addition, Capstone is available in the following Operating System distributio
 - [Void Linux](http://www.voidlinux.eu): A Linux distro based on the xbps packaging system.
 
 - [REMnux](https://remnux.org): A Linux Toolkit for Reverse-Engineering and Analyzing Malware.
-
-- [Xendbg](https://github.com/nccgroup/xendbg): A feature-complete reference implementation of a modern Xen VMI debugger.
-
-- [Mupen64Plus](http://www.mupen64plus.org): A cross-platform plugin-based N64 emulator.
 
 ---
 
