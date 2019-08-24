@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **477** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **478** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -960,6 +960,8 @@ In our knowledge, Capstone has been used by **477** following products (listed i
 - [Xendbg](https://github.com/nccgroup/xendbg): A feature-complete reference implementation of a modern Xen VMI debugger.
 
 - [Mupen64Plus](http://www.mupen64plus.org): A cross-platform plugin-based N64 emulator.
+
+- [Razor](https://github.com/cxreet/razor): A Framework for Post-deployment Software Debloating.
 
 
 <br>
