@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **478** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **479** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -962,6 +962,8 @@ In our knowledge, Capstone has been used by **478** following products (listed i
 - [Mupen64Plus](http://www.mupen64plus.org): A cross-platform plugin-based N64 emulator.
 
 - [Razor](https://github.com/cxreet/razor): A Framework for Post-deployment Software Debloating.
+
+- [AFLplusplus](https://github.com/vanhauser-thc/AFLplusplus): AFL fuzzer with community patches.
 
 
 <br>
