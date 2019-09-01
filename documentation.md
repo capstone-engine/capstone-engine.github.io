@@ -238,3 +238,7 @@ This section introduces several ways to customize Capstone engine at compile tim
 - [Beyond LLVM](beyond_llvm.html)
 
   A part of Capstone is built with LLVM code. However, Capstone is not just LLVM, but superior because it is designed & implemented towards disassembling for security purpose.
+  
+- [A Micro Capstone-Engine API Documentation in Chinese](https://github.com/kabeor/Micro-Capstone-Engine-API-Documentation)
+
+  This API Documentation is simple, it is currently available in Chinese only. This document analyzes Capstone's data types, apis, and related code implementations.
