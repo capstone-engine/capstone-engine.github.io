@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **479** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **480** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -964,6 +964,8 @@ In our knowledge, Capstone has been used by **479** following products (listed i
 - [Razor](https://github.com/cxreet/razor): A Framework for Post-deployment Software Debloating.
 
 - [AFLplusplus](https://github.com/vanhauser-thc/AFLplusplus): AFL fuzzer with community patches.
+
+- [DeviceMon](https://github.com/Kelvinhack/DeviceMon): VT-based PCI device monitor (SPI).
 
 
 <br>
