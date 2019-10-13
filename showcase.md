@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **483** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **484** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -972,6 +972,8 @@ In our knowledge, Capstone has been used by **483** following products (listed i
 - [TriggerBug](https://github.com/notify-bibi/TriggerBug): Fast-Symbolic-Emulation-Engine.
 
 - [Maat](https://maat.re): Open-source Dynamic Symbolic Execution framework used for Binary Analysis.
+
+- [Packman deobfuscator](https://github.com/archercreat/packman-deobfuscator): League-of-Legends anti-cheat code deobfuscator.
 
 
 <br>
