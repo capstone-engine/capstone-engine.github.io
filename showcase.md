@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **481** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **483** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -968,6 +968,10 @@ In our knowledge, Capstone has been used by **481** following products (listed i
 - [DeviceMon](https://github.com/Kelvinhack/DeviceMon): VT-based PCI device monitor (SPI).
 
 - [binarypinja](https://github.com/cakeoomoo/binarypinja): Create datasets for machine learning programs in a NLP (natural language processing).
+
+- [TriggerBug](https://github.com/notify-bibi/TriggerBug): Fast-Symbolic-Emulation-Engine.
+
+- [Maat](https://maat.re): Open-source Dynamic Symbolic Execution framework used for Binary Analysis.
 
 
 <br>
