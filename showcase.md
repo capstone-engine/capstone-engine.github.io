@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **485** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **487** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -976,6 +976,10 @@ In our knowledge, Capstone has been used by **485** following products (listed i
 - [Packman deobfuscator](https://github.com/archercreat/packman-deobfuscator): League-of-Legends anti-cheat code deobfuscator.
 
 - [aah](https://github.com/zydeco/aah): Arm64 architecture handler.
+
+- [Volatility3](https://github.com/volatilityfoundation/volatility3): The Volatile memory extraction framework.
+
+- [Windbgtool](https://github.com/ohjeongwook/windbgtool):  WinDbg Toolbox package.
 
 
 <br>
