@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **487** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **489** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
 
@@ -979,7 +979,11 @@ In our knowledge, Capstone has been used by **487** following products (listed i
 
 - [Volatility3](https://github.com/volatilityfoundation/volatility3): The Volatile memory extraction framework.
 
-- [Windbgtool](https://github.com/ohjeongwook/windbgtool):  WinDbg Toolbox package.
+- [Windbgtool](https://github.com/ohjeongwook/windbgtool): WinDbg Toolbox package.
+
+- [dsdump](https://github.com/DerekSelander/dsdump): An improved nm + Objective-C & Swift class-dump.
+
+- [zdb](https://github.com/Jormit/zdb): 64 bit ELF debugger for reverse engineering.
 
 
 <br>
