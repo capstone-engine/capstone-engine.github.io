@@ -5,9 +5,9 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **489** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **490** following products (listed in no particular order).
 
-- [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework.
+- [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework (PDF).
 
 - [Qiling](https://github.com/qilingframework): Cross-platform & multi-architecture lightweight sandbox.
 
@@ -984,6 +984,8 @@ In our knowledge, Capstone has been used by **489** following products (listed i
 - [dsdump](https://github.com/DerekSelander/dsdump): An improved nm + Objective-C & Swift class-dump.
 
 - [zdb](https://github.com/Jormit/zdb): 64 bit ELF debugger for reverse engineering.
+
+- [QuickPatch](https://github.com/Jormit/zdb): GDB plugin for patching ELF file.
 
 
 <br>
