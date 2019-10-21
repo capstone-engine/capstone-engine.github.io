@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **490** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **491** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework (PDF).
 
@@ -986,6 +986,8 @@ In our knowledge, Capstone has been used by **490** following products (listed i
 - [zdb](https://github.com/Jormit/zdb): 64 bit ELF debugger for reverse engineering.
 
 - [QuickPatch](https://github.com/Jormit/zdb): GDB plugin for patching ELF file.
+
+- [S(gx)ELF-respect](https://github.com/StanPlatinum/elf-respect): Privacy-preserving TEE protoype on a service-oriented environment.
 
 
 <br>
