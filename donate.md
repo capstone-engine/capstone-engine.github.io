@@ -92,3 +92,5 @@ Below is all the *Capstone supporters* who generously made donation (listed in n
 
 - [Hardened Linux](https://github.com/hardenedlinux)
 
+- [Icculus Microgrant 2019](https://icculus.org/microgrant2019)
+
