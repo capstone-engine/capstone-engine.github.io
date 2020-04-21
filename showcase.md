@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **492** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **493** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework (PDF).
 
@@ -1027,6 +1027,8 @@ In addition, Capstone is available in the following Operating System distributio
 - [Void Linux](http://www.voidlinux.eu): A Linux distro based on the xbps packaging system.
 
 - [REMnux](https://remnux.org): A Linux Toolkit for Reverse-Engineering and Analyzing Malware.
+
+- [OBIN](https://github.com/ImanHosseini/OBIN): An educational elf parser and simple binary analysis tool.
 
 ---
 
