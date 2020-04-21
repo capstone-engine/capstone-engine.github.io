@@ -1028,6 +1028,8 @@ In addition, Capstone is available in the following Operating System distributio
 
 - [REMnux](https://remnux.org): A Linux Toolkit for Reverse-Engineering and Analyzing Malware.
 
+- [OBIN](https://github.com/ImanHosseini/OBIN): An educational elf parser and simple binary analysis tool.
+
 ---
 
 Please [let us know](contact.html), so we can put you in the list above, if you are also using Capstone, either:
