@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **493** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **494** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework (PDF).
 
@@ -990,6 +990,9 @@ In our knowledge, Capstone has been used by **493** following products (listed i
 - [S(gx)ELF-respect](https://github.com/StanPlatinum/elf-respect): Privacy-preserving TEE protoype on a service-oriented environment.
 
 - [EFI DXE Emulator](https://github.com/gdbinit/efi_dxe_emulator): EFI DXE Emulator and Interactive Debugger.
+
+- [VTIL Core](https://github.com/vtil-project/VTIL-Core): Virtual-machine Translation Intermediate Language.
+
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
