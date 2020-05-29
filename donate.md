@@ -96,4 +96,4 @@ Below is all the *Capstone supporters* who generously made donation (listed in n
 
 - [Vector 35](https://binary.ninja)
 
-- Robot Space
+- [perfect_genius](https://vk.com/perfect_genius)
