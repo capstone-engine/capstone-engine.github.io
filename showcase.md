@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **496** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **497** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework (PDF).
 
@@ -994,6 +994,8 @@ In our knowledge, Capstone has been used by **496** following products (listed i
 - [VTIL Core](https://github.com/vtil-project/VTIL-Core): Virtual-machine Translation Intermediate Language.
 
 - [Kernel fuzzer for Xen](https://github.com/intel/kernel-fuzzer-for-xen-project): VMI Kernel Fuzzer for Xen Project: VM forking, VMI & AFL integration demo.
+
+- [Frankenstein](https://github.com/seemoo-lab/frankenstein): Broadcom and Cypress firmware emulation for fuzzing and further full-stack debugging.
 
 
 <br>
