@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **498** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **501** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework (PDF).
 
@@ -999,6 +999,16 @@ In our knowledge, Capstone has been used by **498** following products (listed i
 
 - [approxis-groundtruth](https://github.com/LL-MM/approxis-groundtruth): Generates a ground truth map of binary disassembly.
 
+- [OBIN](https://github.com/ImanHosseini/OBIN): An educational elf parser and simple binary analysis tool.
+
+- [AtX](https://github.com/ImanHosseini/AtX): A tool to help port simple ARM32 elf binaries to X86_64 binaries.
+
+- [e9patch](https://github.com/GJDuck/e9patch): A Powerful Static Binary Rewriter.
+
+- [specrop](https://github.com/HexHive/specrop/): Speculative exploition of ROP chains.
+
+- [BlindSide](https://github.com/vusec/blindside): BlindSide allows attackers to “hack blind” in the Spectre era.
+
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
@@ -1036,10 +1046,6 @@ In addition, Capstone is available in the following Operating System distributio
 - [Void Linux](http://www.voidlinux.eu): A Linux distro based on the xbps packaging system.
 
 - [REMnux](https://remnux.org): A Linux Toolkit for Reverse-Engineering and Analyzing Malware.
-
-- [OBIN](https://github.com/ImanHosseini/OBIN): An educational elf parser and simple binary analysis tool.
-
-- [AtX](https://github.com/ImanHosseini/AtX): A tool to help port simple ARM32 elf binaries to X86_64 binaries.
 
 ---
 
