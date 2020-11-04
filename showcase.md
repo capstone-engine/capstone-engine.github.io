@@ -5,7 +5,7 @@ title: Showcases
 
 ## Showcase
 
-In our knowledge, Capstone has been used by **502** following products (listed in no particular order).
+In our knowledge, Capstone has been used by **504** following products (listed in no particular order).
 
 - [Skorpio](http://groundx.io/docs/Opcde2018-skorpio.pdf): Cross-platform-architecture Dynamic Instrumentation Framework (PDF).
 
@@ -1010,6 +1010,11 @@ In our knowledge, Capstone has been used by **502** following products (listed i
 - [BlindSide](https://github.com/vusec/blindside): BlindSide allows attackers to “hack blind” in the Spectre era.
 
 - [JOP ROCKET](https://github.com/Bw3ll/JOP_ROCKET/): The Jump-oriented Programming Reversing Open Cyber Knowledge Expert Tool.
+
+- [XPEViewer](https://github.com/horsicq/XPEViewer): PE file viewer/editor for Windows, Linux and MacOS.
+
+- [speakeasy](https://github.com/fireeye/speakeasy): A portable, modular, binary emulator designed to emulate Windows kernel and user mode malware.
+
 
 
 <br>
