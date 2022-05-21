@@ -1013,15 +1013,15 @@ In our knowledge, Capstone has been used by **504** following products (listed i
 
 - [XPEViewer](https://github.com/horsicq/XPEViewer): PE file viewer/editor for Windows, Linux and MacOS.
 
-- [XELFViewer]((https://github.com/horsicq/XELFViewer): ELF file viewer/editor for Windows, Linux and MacOS.
+- [XELFViewer](https://github.com/horsicq/XELFViewer): ELF file viewer/editor for Windows, Linux and MacOS.
 
-- [XMachOViewer]((https://github.com/horsicq/XMachOViewer): Mach-O file viewer/editor for Windows, Linux and MacOS.
+- [XMachOViewer](https://github.com/horsicq/XMachOViewer): Mach-O file viewer/editor for Windows, Linux and MacOS.
 
 - [speakeasy](https://github.com/fireeye/speakeasy): A portable, modular, binary emulator designed to emulate Windows kernel and user mode malware.
 
-- [XAPKDetector]((https://github.com/horsicq/XAPKDetector): APK/DEX detector for Windows, Linux and MacOS.
+- [XAPKDetector](https://github.com/horsicq/XAPKDetector): APK/DEX detector for Windows, Linux and MacOS.
 
-- [Detect It Easy]((https://github.com/horsicq/Detect-It-Easy): Program for determining types of files for Windows, Linux and MacOS.
+- [Detect It Easy](https://github.com/horsicq/Detect-It-Easy): Program for determining types of files for Windows, Linux and MacOS.
 
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
