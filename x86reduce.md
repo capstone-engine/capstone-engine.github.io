@@ -5,7 +5,7 @@ title: X86-reduce engine
 
 ## Building X86-reduce engine
 
-(Note: at the moment, this *X86-reduce* option is only availabe in the [next branch](https://github.com/capstone-engine/capstone/tree/next) of our Github repo. It will be integrated into the next release of Capstone)
+(Note: at the moment, this *X86-reduce* option is only available in the [next branch](https://github.com/capstone-engine/capstone/tree/next) of our Github repo. It will be integrated into the next release of Capstone)
 
 This documentation introduces how to build the X86 engine of Capstone to be as small as *200KB* - about *60% smaller* than the [diet engine](diet.html) - for embedding purpose.
 
@@ -16,7 +16,7 @@ Later part presents the APIs related to this reduced mode.
 
 Typically, we use Capstone for usual applications, where the library weight does not really matter. Indeed, as of version *2.1-RC1*, the whole engine is only 1.9 MB including all architectures, and this size raises no issue to most people.
 
-However, to embed Capstone into special enviroments, such as OS kernel driver or firmware, the engine size should be as small as possible due to space restriction. To achieve this object, we must compile Capstone using special methods.
+However, to embed Capstone into special environments, such as OS kernel driver or firmware, the engine size should be as small as possible due to space restriction. To achieve this object, we must compile Capstone using special methods.
 
 To build a tiny engine, consult three documentations below.
 
@@ -31,7 +31,7 @@ For X86 architecture, after applying all of the above techniques, the binary siz
 
 ### 2. Building X86-reduce engine
 
-To reduce the X86 engine even futher, compile Capstone in *X86-reduce* mode to remove some exotic non-critical X86 instruction sets. As a result, this downsizes the engine by *around 60%*, to under *200KB*.
+To reduce the X86 engine even further, compile Capstone in *X86-reduce* mode to remove some exotic non-critical X86 instruction sets. As a result, this downsizes the engine by *around 60%*, to under *200KB*.
 
 Below is the list of instruction sets removed by this option:
 

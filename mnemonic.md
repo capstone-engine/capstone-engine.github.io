@@ -31,7 +31,7 @@ Below is the explanation for important lines of the above C sample.
 
 - Line 4: Declare variables *my_mnem* of data type *cs\_opt\_mnem* to customize *JNE* instruction (indicated by *X86\_INS\_JNE*) to have mnemonic *"jnz"*.
 
-- Line 6: Intialize X86 engine of 32-bit mode.
+- Line 6: Initialize X86 engine of 32-bit mode.
 
 - Line 7: Call *cs_option* with option *CS\_OPT\_MNEMONIC*, and pass the address of *my_mnem* in the third parameter. After this, we can start disassembling and instruction *JNE* will have *"jnz"* mnemonic, rather than the default value *"jne"*.
 

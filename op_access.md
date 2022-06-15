@@ -90,7 +90,7 @@ Below is the explanation for important lines of the above C sample.
 
 - Line 12: Declare variables *regs_read* & *regs_write* of data type *cs\_regs* to keep the list of registers being read or modified later. Note that *cs\_regs* is actually a data type of an array of *uint16_t*.
 
-- Line 15 ~ 18: Intialize X86 engine, then turn on the *DETAIL* mode, which is required to get the access information of operands & registers.
+- Line 15 ~ 18: Initialize X86 engine, then turn on the *DETAIL* mode, which is required to get the access information of operands & registers.
 
 - Line 20 ~ 24: Disassemble input code, then print out the assembly of all the instructions.
 
@@ -132,7 +132,7 @@ for insn in md.disasm(code, 0x1000):
 <br>
 Below is the explanation for important lines of this Python sample.
 
-- Line 5 ~ 6: Intialize X86 engine, then turn on the *DETAIL* mode, which is required to get the access information of operands & registers.
+- Line 5 ~ 6: Initialize X86 engine, then turn on the *DETAIL* mode, which is required to get the access information of operands & registers.
 
 - Line 8 ~ 9: Disassemble input code, then print out the assembly of all the instructions.
 

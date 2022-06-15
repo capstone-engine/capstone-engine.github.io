@@ -113,7 +113,7 @@ thrilled when Capstone offered to maintain SystemZ disassembly support into
 Capstone. Not only the disassembly is sound and accurate (being derived
 from LLVM's specifications), but it's also fully open source. Best of
 all, we could leverage previous work done with Capstone to craft our own
-disassembly tools targetting SystemZ. Just plain awesome! A warm thank
+disassembly tools targeting SystemZ. Just plain awesome! A warm thank
 to the Capstone community :) 
 >
 <p style="text-align: right"><i>Jonathan Brossard, Toucan System</i></p>
@@ -130,7 +130,7 @@ to the Capstone community :)
 >
 <p style="text-align: right"><i>Joshua Pitts, Tool: "The Backdoor Factory"</i></p>
 
-> And there is ... Capstone! Cool, lightweight, open-source, LLVM-based dissasembly engine for various architectures (x86, arm and many others!) and available to use in different languages like Python, Go, C++! Its small size and high modularity makes it perfectly working in kernel as well! 
+> And there is ... Capstone! Cool, lightweight, open-source, LLVM-based disassembly engine for various architectures (x86, arm and many others!) and available to use in different languages like Python, Go, C++! Its small size and high modularity makes it perfectly working in kernel as well! 
 >
 > Its community is growing, and developers of Capstone provide great support! Thank you guys for providing great tool!
 >

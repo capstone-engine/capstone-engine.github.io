@@ -15,7 +15,7 @@ Depending on the programming language your tool uses (either C, Python or Java),
 
 ### C code
 
-- From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.
+- From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after initializing the engine like in the code below.
 
 {% highlight c %}
 	csh handle;
@@ -50,7 +50,7 @@ Depending on the programming language your tool uses (either C, Python or Java),
 
 ### Python code
 
-From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.
+From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after initializing the engine like in the code below.
 
 {% highlight python %}
 
@@ -65,7 +65,7 @@ From version 2.0, Capstone no longer generates details for every disassembled in
 
 ### Java code
 
-From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after intializing the engine like in the code below.
+From version 2.0, Capstone no longer generates details for every disassembled instruction by default. Therefore, if you need those details such as implicit registers read/written or information on operands, you must turn it on right after initializing the engine like in the code below.
 
 {% highlight java %}
 
