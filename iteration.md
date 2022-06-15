@@ -51,4 +51,4 @@ Internally, *cs_disasm_iter* behaves exactly like *cs_disasm* if we call *cs_dis
 
 On the other hand, *cs_disasm* is more approriate when we want to disassemble all the instructions (using *count = 0*), or when we want to save all the disassembled instructions - without overwriting them in the loop - for future reference.
 
-See a full sample of *cs_disasm_iter* & *cs_malloc* in [https://github.com/aquynh/capstone/blob/next/tests/test_iter.c](https://github.com/aquynh/capstone/blob/next/tests/test_iter.c)
+See a full sample of *cs_disasm_iter* & *cs_malloc* in [https://github.com/capstone-engine/capstone/blob/next/tests/test_iter.c](https://github.com/capstone-engine/capstone/blob/next/tests/test_iter.c)

@@ -347,5 +347,5 @@ From version 2.1, Capstone supports "diet" compilation option to minimize the en
 
 ### 8. More examples
 
-This tutorial does not explain all the API of Capstone yet. Please find more advanced examples in source of *test_\*.py* files under Python binding directory [bindings/python](https://github.com/aquynh/capstone/tree/master/bindings/python) in the Capstone source code.
+This tutorial does not explain all the API of Capstone yet. Please find more advanced examples in source of *test_\*.py* files under Python binding directory [bindings/python](https://github.com/capstone-engine/capstone/tree/master/bindings/python) in the Capstone source code.
 

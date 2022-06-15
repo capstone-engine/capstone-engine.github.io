@@ -5,7 +5,7 @@ title: X86-reduce engine
 
 ## Building X86-reduce engine
 
-(Note: at the moment, this *X86-reduce* option is only availabe in the [next branch](https://github.com/aquynh/capstone/tree/next) of our Github repo. It will be integrated into the next release of Capstone)
+(Note: at the moment, this *X86-reduce* option is only availabe in the [next branch](https://github.com/capstone-engine/capstone/tree/next) of our Github repo. It will be integrated into the next release of Capstone)
 
 This documentation introduces how to build the X86 engine of Capstone to be as small as *200KB* - about *60% smaller* than the [diet engine](diet.html) - for embedding purpose.
 

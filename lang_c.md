@@ -374,5 +374,5 @@ From version 2.1, Capstone supports "diet" compilation option to minimize the en
 
 ### 7. More examples
 
-This tutorial does not explain all the API of Capstone yet. Please find more advanced examples in source of *test_\*.c* files under directory [tests/](https://github.com/aquynh/capstone/tree/master/tests) in the Capstone source code.
+This tutorial does not explain all the API of Capstone yet. Please find more advanced examples in source of *test_\*.c* files under directory [tests/](https://github.com/capstone-engine/capstone/tree/master/tests) in the Capstone source code.
 

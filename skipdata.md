@@ -5,7 +5,7 @@ title: SKIPDATA mode
 
 ## SKIPDATA mode
 
-(Note: at the moment, this option is only availabe in the [next branch](https://github.com/aquynh/capstone/tree/next) of our Github repo. It will be integrated into the next release of Capstone)
+(Note: at the moment, this option is only availabe in the [next branch](https://github.com/capstone-engine/capstone/tree/next) of our Github repo. It will be integrated into the next release of Capstone)
 
 By default, Capstone stops disassembling when it encounters a broken instruction. Most of the time, the reason is that this is data mixed inside the input, and it is understandable that Capstone does not understand this "weird" code.
 
@@ -189,6 +189,6 @@ md.skipdata = True
 
 ### 4. Sample code for SKIPDATA mode
 
-For sample C code, see [https://github.com/aquynh/capstone/blob/next/tests/test_skipdata.c](https://github.com/aquynh/capstone/blob/next/tests/test_skipdata.c)
+For sample C code, see [https://github.com/capstone-engine/capstone/blob/next/tests/test_skipdata.c](https://github.com/capstone-engine/capstone/blob/next/tests/test_skipdata.c)
 
-For sample Python code, see [https://github.com/aquynh/capstone/blob/next/bindings/python/test_skipdata.py](https://github.com/aquynh/capstone/blob/next/bindings/python/test_skipdata.py)
+For sample Python code, see [https://github.com/capstone-engine/capstone/blob/next/bindings/python/test_skipdata.py](https://github.com/capstone-engine/capstone/blob/next/bindings/python/test_skipdata.py)

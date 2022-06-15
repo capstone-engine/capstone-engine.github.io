@@ -195,7 +195,7 @@ At the moment, *CEbot* supports 8 architectures with the following setup.
 
 - **How this works?**
 
-  Our bot with the Twitter ID **@CEb0t** watches for Twitter stream with hashtags *#2ce* and *#cebot* to pick up the requests. Powered by the latest [Capstone Engine](https://github.com/aquynh/capstone/tree/next), this bot reverses the input hex-string, then sends back the assembly to the user via Twitter.
+  Our bot with the Twitter ID **@CEb0t** watches for Twitter stream with hashtags *#2ce* and *#cebot* to pick up the requests. Powered by the latest [Capstone Engine](https://github.com/capstone-engine/capstone/tree/next), this bot reverses the input hex-string, then sends back the assembly to the user via Twitter.
 
   Note that the input code is disassembled with *offset 0*.
 

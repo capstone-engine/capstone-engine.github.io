@@ -7,7 +7,7 @@ title: Access information of operands.
 
 ### 1. Get access info of registers
 
-Now available in the Github branch [next](https://github.com/aquynh/capstone/tree/next), Capstone provides a new API named **cs\_regs\_access()**. This function can retrieve the list of all registers *read* or *modified* - either implicitly or explicitly - by instructions.
+Now available in the Github branch [next](https://github.com/capstone-engine/capstone/tree/next), Capstone provides a new API named **cs\_regs\_access()**. This function can retrieve the list of all registers *read* or *modified* - either implicitly or explicitly - by instructions.
 
 <br>
 The C sample code below demonstrates how to use *cs\_regs\_access* on X86 input.
@@ -195,5 +195,5 @@ See the screenshot below for what this feature can provide.
 
 ### 4. More examples
 
-Find the full sample on how to retrieve information on operand access in source of [test_x86.c](https://github.com/aquynh/capstone/blob/next/tests/test_x86.c) or [test_x86.py](https://github.com/aquynh/capstone/blob/next/bindings/python/test_x86.py).
+Find the full sample on how to retrieve information on operand access in source of [test_x86.c](https://github.com/capstone-engine/capstone/blob/next/tests/test_x86.c) or [test_x86.py](https://github.com/capstone-engine/capstone/blob/next/bindings/python/test_x86.py).
 
