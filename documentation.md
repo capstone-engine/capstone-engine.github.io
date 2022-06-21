@@ -183,7 +183,7 @@ At the moment precompiled binaries for *Windows*, *Ubuntu*, *FedoraCore*, *Pytho
 
 - **Java** <img src="img/jar.png" height="24" width="24">
 
-  Java binding is availabe in JAR package in [Download](download.html).
+  Java binding is available in JAR package in [Download](download.html).
 
 ---
 

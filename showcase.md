@@ -205,7 +205,7 @@ In our knowledge, Capstone has been used by **508** following products (listed i
 
 - [MemoryPatchDetector](https://github.com/Intezer/MemoryPatchDetector): Detects code differentials between executables in disk and processes/modules in memory.
 
-- [Mpesm](https://github.com/carbonblack/tic/tree/master/mpesm): Indentify the compiler/packer/cryptor of PE files.
+- [Mpesm](https://github.com/carbonblack/tic/tree/master/mpesm): Identify the compiler/packer/cryptor of PE files.
 
 - [Silicon-disassembler](https://github.com/m4b/silicon-disassembler): A high-performance, asynchronous web-component disassembler.
 
@@ -375,7 +375,7 @@ In our knowledge, Capstone has been used by **508** following products (listed i
 
 - [KlareDbg](https://github.com/KernelAnalysisPlatform/KlareDbg): Kernel debugger using Timeless Debugging method.
 
-- [Ponce](https://github.com/illera88/Ponce): IDA Pro-based symbolic execution & taint anlysis engine.
+- [Ponce](https://github.com/illera88/Ponce): IDA Pro-based symbolic execution & taint analysis engine.
 
 - [Relyze](https://www.relyze.com): Interactive Software Analysis.
 
@@ -753,7 +753,7 @@ In our knowledge, Capstone has been used by **508** following products (listed i
 
 - [Pimp my ride](https://github.com/smuniz/pimp_my_ride): Multi-architecture CPU Emulator.
 
-- [PTfuzzer](https://github.com/hunter-ht-2018/ptfuzzer): Greybox fuzzer to fuzz any binary-only softwares.
+- [PTfuzzer](https://github.com/hunter-ht-2018/ptfuzzer): Greybox fuzzer to fuzz any binary-only software.
 
 - [CAFA](https://github.com/CAFA1/CAFA): A Checksum-Aware Fuzzing Assistant For More Coverage.
 
@@ -987,7 +987,7 @@ In our knowledge, Capstone has been used by **508** following products (listed i
 
 - [QuickPatch](https://github.com/Jormit/zdb): GDB plugin for patching ELF file.
 
-- [S(gx)ELF-respect](https://github.com/StanPlatinum/elf-respect): Privacy-preserving TEE protoype on a service-oriented environment.
+- [S(gx)ELF-respect](https://github.com/StanPlatinum/elf-respect): Privacy-preserving TEE prototype on a service-oriented environment.
 
 - [EFI DXE Emulator](https://github.com/gdbinit/efi_dxe_emulator): EFI DXE Emulator and Interactive Debugger.
 
@@ -1005,7 +1005,7 @@ In our knowledge, Capstone has been used by **508** following products (listed i
 
 - [e9patch](https://github.com/GJDuck/e9patch): A Powerful Static Binary Rewriter.
 
-- [specrop](https://github.com/HexHive/specrop/): Speculative exploition of ROP chains.
+- [specrop](https://github.com/HexHive/specrop/): Speculative exploitation of ROP chains.
 
 - [BlindSide](https://github.com/vusec/blindside): BlindSide allows attackers to “hack blind” in the Spectre era.
 

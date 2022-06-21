@@ -12,7 +12,7 @@ This documentation introduces necessary steps to build Capstone for embedding in
 
 Typically, we use Capstone for usual applications, where the library weight does not really matter. Indeed, as of version *2.1-RC1*, the whole engine is only 1.9 MB including all architectures, and this size raise no issue to most people.
 
-However, to embed Capstone into special enviroments, such as OS kernel driver or firmware, the engine size should be as small as possible due to space restriction. To achieve this object, we must compile Capstone using special methods.
+However, to embed Capstone into special environments, such as OS kernel driver or firmware, the engine size should be as small as possible due to space restriction. To achieve this object, we must compile Capstone using special methods.
 
 To build a minimize engine, consult two documentations below.
 
@@ -38,7 +38,7 @@ NOTE: the observant readers might already see that we can combine step (1) & (2)
 
 ### 3. Setting up dynamic memory management
 
-In step (2) above, we already specified at compile-time that we will use our own dynamic memory management functions, provided by our embedded enviroment. Next, we need to declare these functions.
+In step (2) above, we already specified at compile-time that we will use our own dynamic memory management functions, provided by our embedded environment. Next, we need to declare these functions.
 
 Capstone needs the following functions: *malloc*, *calloc*, *realloc*, *free* & *vsnprintf*. Unsurprisingly, these functions use exactly the same prototypes of system functions in style of *Unix stdlibc*, like below.
 
@@ -77,7 +77,7 @@ void *my_realloc(void *ptr, size_t size)
 
 void  my_free(void *ptr)
 {
-    // Free memory formely allocated by my_malloc/my_calloc/my_realloc.
+    // Free memory formerly allocated by my_malloc/my_calloc/my_realloc.
     // ...
 }
 

@@ -18,9 +18,9 @@ See the [version history](changelog.html) for a list of changes.
 
 ### Git repository <img src="img/octocat.jpg" height="32" width="32">
 
-The latest version of the source code can be retrieved at our [Git repository](https://github.com/aquynh/capstone).
+The latest version of the source code can be retrieved at our [Git repository](https://github.com/capstone-engine/capstone).
 
-Refer to the [Wiki Changelog](https://github.com/aquynh/capstone/wiki/ChangeLog) of our development branch to peek into the features of the *next release*.
+Refer to the [Wiki Changelog](https://github.com/capstone-engine/capstone/wiki/ChangeLog) of our development branch to peek into the features of the *next release*.
 
 ---
 
@@ -32,17 +32,17 @@ At the moment Capstone are available for *Mac OSX*, *Ubuntu*, *Debian*, *Fedora 
 
 ### Source archive <img src="img/tgz.png" height="28" width="28"> <img src="img/zip.png" height="32" width="32">
 
-<a class="download" href="https://github.com/aquynh/capstone/archive/{{ post.title }}.tar.gz" title="Download source (TGZ)">.TGZ</a>
+<a class="download" href="https://github.com/capstone-engine/capstone/archive/{{ post.title }}.tar.gz" title="Download source (TGZ)">.TGZ</a>
 
 This package contains:
 
 - The complete source code for the Capstone framework.
-- Bindings for Java & Python (at the moment, Ocaml binding is only available in the [Git repository](https://github.com/aquynh/capstone)).
+- Bindings for Java, Python, Ocaml, PowerShell and VB6.
 - A collection of example and test programs.
 
 This is the recommended version for all platforms.
 
-<a class="download" href="https://github.com/aquynh/capstone/archive/{{ post.title }}.zip" title="Download source (ZIP)">.ZIP</a>
+<a class="download" href="https://github.com/capstone-engine/capstone/archive/{{ post.title }}.zip" title="Download source (ZIP)">.ZIP</a>
 
 ---
 
@@ -74,7 +74,7 @@ Besides PowerShell, Python, Java & Ocaml get supported in the main code, some bi
 
 ### Windows - Core engine <img src="img/windows.png" height="28" width="28">
 
-<a class="download" href="https://github.com/aquynh/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-win32.zip" title="Download Win32 Binaries (ZIP)">Win-32</a>
+<a class="download" href="https://github.com/capstone-engine/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-win32.zip" title="Download Win32 Binaries (ZIP)">Win-32</a>
 
 NOTE: This is necessary for all bindings (except Python) & also for C programming.
 
@@ -85,7 +85,7 @@ This package contains:
 - 32-bit/64-bit DLLs & static libraries for Microsoft Windows 32-bit/64-bit.
 - cstool (cstool.exe)
 
-<a class="download" href="https://github.com/aquynh/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-win64.zip" title="Download Win64 Binaries (ZIP)">Win-64</a>
+<a class="download" href="https://github.com/capstone-engine/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-win64.zip" title="Download Win64 Binaries (ZIP)">Win-64</a>
 
 ---
 

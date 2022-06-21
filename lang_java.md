@@ -112,5 +112,5 @@ md.setDetail(false)
 
 ### 4. More examples
 
-This tutorial does not explain all the API of Capstone yet. Please find more advanced examples in source of *Test\*.java* files under Java binding directory [bindings/java](https://github.com/aquynh/capstone/tree/master/bindings/java) in the Capstone source code.
+This tutorial does not explain all the API of Capstone yet. Please find more advanced examples in source of *Test\*.java* files under Java binding directory [bindings/java](https://github.com/capstone-engine/capstone/tree/master/bindings/java) in the Capstone source code.
 

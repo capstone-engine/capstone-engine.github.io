@@ -14,9 +14,9 @@ Later part presents the APIs related to this feature and recommends the areas pr
 
 Typically, we use Capstone for usual applications, where the library weight does not really matter. Indeed, as of version *2.1-RC1*, the whole engine is only 1.9 MB including all architectures, and this size raises no issue to most people.
 
-However, there are cases when we want to embed Capstone into special enviroments, such as OS kernel driver or firmware, where its size should be as small as possible due to space restriction. While we can always [compile only selected architectures](compile.html) to make the libraries more compact, we still want to slim them down further.
+However, there are cases when we want to embed Capstone into special environments, such as OS kernel driver or firmware, where its size should be as small as possible due to space restriction. While we can always [compile only selected architectures](compile.html) to make the libraries more compact, we still want to slim them down further.
 
-Towards this object, since verson *2.1*, Capstone supports *diet* mode, in which some non-critical data are removed, thus making the engine size at least 40% smaller.
+Towards this object, since version *2.1*, Capstone supports *diet* mode, in which some non-critical data are removed, thus making the engine size at least 40% smaller.
 
 By default, Capstone is built in standard mode. To build *diet* engine, do: (demonstration is on \*nix systems)
 
@@ -92,11 +92,11 @@ While most Capstone APIs are still function exactly the same, due to these absen
 
 - **cs_reg_read()**
 
-  We no longer have information about registers implicitly readed by instructions, so we cannot tell if an instruction read a particular register.
+  We no longer have information about registers implicitly read by instructions, so we cannot tell if an instruction read a particular register.
 
 - **cs_write_read()**
 
-  We no longer have information about registers implicitly readed by instructions, so we cannot tell if an instruction modify a particular register.
+  We no longer have information about registers implicitly read by instructions, so we cannot tell if an instruction modify a particular register.
 
 <br>
 By *irrelevant*, we mean above APIs would return undefined value. Therefore, programmers have been warned *not to use these APIs* in *diet* mode.

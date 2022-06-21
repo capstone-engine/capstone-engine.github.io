@@ -7,7 +7,7 @@ title: Access information of operands.
 
 ### 1. Get access info of registers
 
-Now available in the Github branch [next](https://github.com/aquynh/capstone/tree/next), Capstone provides a new API named **cs\_regs\_access()**. This function can retrieve the list of all registers *read* or *modified* - either implicitly or explicitly - by instructions.
+Now available in the Github branch [next](https://github.com/capstone-engine/capstone/tree/next), Capstone provides a new API named **cs\_regs\_access()**. This function can retrieve the list of all registers *read* or *modified* - either implicitly or explicitly - by instructions.
 
 <br>
 The C sample code below demonstrates how to use *cs\_regs\_access* on X86 input.
@@ -90,7 +90,7 @@ Below is the explanation for important lines of the above C sample.
 
 - Line 12: Declare variables *regs_read* & *regs_write* of data type *cs\_regs* to keep the list of registers being read or modified later. Note that *cs\_regs* is actually a data type of an array of *uint16_t*.
 
-- Line 15 ~ 18: Intialize X86 engine, then turn on the *DETAIL* mode, which is required to get the access information of operands & registers.
+- Line 15 ~ 18: Initialize X86 engine, then turn on the *DETAIL* mode, which is required to get the access information of operands & registers.
 
 - Line 20 ~ 24: Disassemble input code, then print out the assembly of all the instructions.
 
@@ -132,7 +132,7 @@ for insn in md.disasm(code, 0x1000):
 <br>
 Below is the explanation for important lines of this Python sample.
 
-- Line 5 ~ 6: Intialize X86 engine, then turn on the *DETAIL* mode, which is required to get the access information of operands & registers.
+- Line 5 ~ 6: Initialize X86 engine, then turn on the *DETAIL* mode, which is required to get the access information of operands & registers.
 
 - Line 8 ~ 9: Disassemble input code, then print out the assembly of all the instructions.
 
@@ -195,5 +195,5 @@ See the screenshot below for what this feature can provide.
 
 ### 4. More examples
 
-Find the full sample on how to retrieve information on operand access in source of [test_x86.c](https://github.com/aquynh/capstone/blob/next/tests/test_x86.c) or [test_x86.py](https://github.com/aquynh/capstone/blob/next/bindings/python/test_x86.py).
+Find the full sample on how to retrieve information on operand access in source of [test_x86.c](https://github.com/capstone-engine/capstone/blob/next/tests/test_x86.c) or [test_x86.py](https://github.com/capstone-engine/capstone/blob/next/bindings/python/test_x86.py).
 

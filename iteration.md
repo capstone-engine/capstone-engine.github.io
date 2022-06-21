@@ -49,6 +49,6 @@ See below for a sample C code demonstrating this API.
 
 Internally, *cs_disasm_iter* behaves exactly like *cs_disasm* if we call *cs_disasm* with argument *count = 1*. However, *cs_disasm_iter* is faster because it reuses (and also overwrites) the same memory to store disassembled instruction, avoiding all the malloc/realloc in the loop above. So if we just need to do some quick iteration through all the instructions, *cs_disasm_iter* should be considered.
 
-On the other hand, *cs_disasm* is more approriate when we want to disassemble all the instructions (using *count = 0*), or when we want to save all the disassembled instructions - without overwriting them in the loop - for future reference.
+On the other hand, *cs_disasm* is more appropriate when we want to disassemble all the instructions (using *count = 0*), or when we want to save all the disassembled instructions - without overwriting them in the loop - for future reference.
 
-See a full sample of *cs_disasm_iter* & *cs_malloc* in [https://github.com/aquynh/capstone/blob/next/tests/test_iter.c](https://github.com/aquynh/capstone/blob/next/tests/test_iter.c)
+See a full sample of *cs_disasm_iter* & *cs_malloc* in [https://github.com/capstone-engine/capstone/blob/next/tests/test_iter.c](https://github.com/capstone-engine/capstone/blob/next/tests/test_iter.c)

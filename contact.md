@@ -14,9 +14,9 @@ Want to let us know you are happily using Capstone for your products/training/wo
 
 - [Mailing list](https://lists.sourceforge.net/lists/listinfo/capstone-users) would be the best method to contact us. This is the place for long conversations.
 
-- [Fork the code](https://github.com/aquynh/capstone) to contribute bugfixes and new features - then send us the pull requests.
+- [Fork the code](https://github.com/capstone-engine/capstone) to contribute bugfixes and new features - then send us the pull requests.
 
-- [Github issue](https://github.com/aquynh/capstone/issues/new) is also a good place to report bugs (Note: Github ID required).
+- [Github issue](https://github.com/capstone-engine/capstone/issues/new) is also a good place to report bugs (Note: Github ID required).
 
 - [Twitter](http://twitter.com/capstone_engine) can be used for simple/quick questions -- we will answer in our spare time. 
 

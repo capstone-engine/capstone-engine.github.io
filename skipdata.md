@@ -5,11 +5,11 @@ title: SKIPDATA mode
 
 ## SKIPDATA mode
 
-(Note: at the moment, this option is only availabe in the [next branch](https://github.com/aquynh/capstone/tree/next) of our Github repo. It will be integrated into the next release of Capstone)
+(Note: at the moment, this option is only available in the [next branch](https://github.com/capstone-engine/capstone/tree/next) of our Github repo. It will be integrated into the next release of Capstone)
 
 By default, Capstone stops disassembling when it encounters a broken instruction. Most of the time, the reason is that this is data mixed inside the input, and it is understandable that Capstone does not understand this "weird" code.
 
-Typically, you are recommended to dertermine yourself where the next code is, and then continue disassembling from that place. However, in some cases you just want to let Capstone automatically skip some data until it finds a legitimate instruction, then just carries on from there. Hence, the **SKIPDATA** mode is introduced for this purpose.
+Typically, you are recommended to determine yourself where the next code is, and then continue disassembling from that place. However, in some cases you just want to let Capstone automatically skip some data until it finds a legitimate instruction, then just carries on from there. Hence, the **SKIPDATA** mode is introduced for this purpose.
 
 In general, this solution is suboptimal because Capstone can make a mistake deciding what is data, what is code. Only rely on a fact that input can be disassembled to determine the code start from there is fundamentally wrong, so you are warned: only use this mode when you know what you are doing.
 
@@ -189,6 +189,6 @@ md.skipdata = True
 
 ### 4. Sample code for SKIPDATA mode
 
-For sample C code, see [https://github.com/aquynh/capstone/blob/next/tests/test_skipdata.c](https://github.com/aquynh/capstone/blob/next/tests/test_skipdata.c)
+For sample C code, see [https://github.com/capstone-engine/capstone/blob/next/tests/test_skipdata.c](https://github.com/capstone-engine/capstone/blob/next/tests/test_skipdata.c)
 
-For sample Python code, see [https://github.com/aquynh/capstone/blob/next/bindings/python/test_skipdata.py](https://github.com/aquynh/capstone/blob/next/bindings/python/test_skipdata.py)
+For sample Python code, see [https://github.com/capstone-engine/capstone/blob/next/bindings/python/test_skipdata.py](https://github.com/capstone-engine/capstone/blob/next/bindings/python/test_skipdata.py)
