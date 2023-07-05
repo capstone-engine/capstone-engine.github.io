@@ -20,8 +20,6 @@ See the [version history](changelog.html) for a list of changes.
 
 The latest version of the source code can be retrieved at our [Git repository](https://github.com/capstone-engine/capstone).
 
-Refer to the [Wiki Changelog](https://github.com/capstone-engine/capstone/wiki/ChangeLog) of our development branch to peek into the features of the *next release*.
-
 ---
 
 ### Package repositories <img src="img/osx.png" height="28" width="28"> <img src="img/ubuntu.png" height="28" width="28"> <img src="img/debian.png" height="28" width="28"> <img src="img/fedora.png" height="28" width="90"> <img src="img/freebsd.png" height="28" width="28"> <img src="img/openbsd.png" height="28" width="28"> <img src="img/netbsd.png" height="28" width="28"> <img src="img/python.png" height="28" width="28">
@@ -69,23 +67,6 @@ Besides PowerShell, Python, Java & Ocaml get supported in the main code, some bi
 - [Capstone-Clj](https://github.com/williballenthin/reversing-clj/tree/master/capstone-clj): Clojure binding (by Willi Ballenthin).
 - [capstone-d](https://github.com/bohlender/capstone-d): D binding (by Dimitri Bohlender).
 - [C# binding](https://github.com/mattifestation/capstone) (by Matt Graeber) (*Note: this is only for the older version Capstone 2.0*).
-
----
-
-### Windows - Core engine <img src="img/windows.png" height="28" width="28">
-
-<a class="download" href="https://github.com/capstone-engine/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-win32.zip" title="Download Win32 Binaries (ZIP)">Win-32</a>
-
-NOTE: This is necessary for all bindings (except Python) & also for C programming.
-
-This package contains:
-
-- README & license file.
-- The Capstone header files (\*.h) for C programming.
-- 32-bit/64-bit DLLs & static libraries for Microsoft Windows 32-bit/64-bit.
-- cstool (cstool.exe)
-
-<a class="download" href="https://github.com/capstone-engine/capstone/releases/download/{{ post.title }}/capstone-{{ post.title }}-win64.zip" title="Download Win64 Binaries (ZIP)">Win-64</a>
 
 ---
 
