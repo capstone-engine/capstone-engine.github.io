@@ -19,7 +19,7 @@ avatar: /img/capstone.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   email: capstone.engine@gmail.com
-  github: aquynh/capstone
+  github: capstone-engine/capstone
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: capstone_engine
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
