@@ -1023,6 +1023,8 @@ In our knowledge, Capstone has been used by **508** following products (listed i
 
 - [Detect It Easy](https://github.com/horsicq/Detect-It-Easy): Program for determining types of files for Windows, Linux and MacOS.
 
+- [SimEng](https://github.com/UoB-HPC/SimEng): A fast, easily modifiable, cycle-level processor simulation framework.
+
 <br>
 In addition, Capstone is available in the following Operating System distributions (listed in no particular order)
 
