@@ -57,7 +57,7 @@ Besides PowerShell, Python, Java & Ocaml get supported in the main code, some bi
 - [LuaCapstone](https://github.com/Dax89/LuaCapstone): Lua binding (by Antonio Davide).
 - [Capstone-RS](https://github.com/richo/capstone-rs): Rust binding (by Richo Healey).
 - [Capstone-Perl](https://github.com/t00sh/capstone-perl): Perl binding (by Tosh).
-- [TCapstone](https://github.com/stievie/Capstone): Delphi/Free Pascal binding (by Stievie).
+- [TCapstone](https://github.com/delphilite/CapstoneDelphi): Delphi/Free Pascal binding (by Lsuper).
 - [CapstoneJ](https://github.com/kevemueller/capstonej): Java binding (by Keve Müller).
 - [Hapstone](https://github.com/ibabushkin/hapstone): Haskell binding (by ibabushkin).
 - [Emacs-capstone](https://github.com/collarchoke/emacs-capstone): Emacs (elisp) binding (by Bas Alberts).
